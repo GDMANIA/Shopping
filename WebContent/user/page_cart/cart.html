@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车页</title>
+		<link rel="SHORTCUT ICON" href="/shopping/chenchen.ico">
+		<link rel="stylesheet" type="text/css" href="/shopping/css/shopping_common.css"/>
+		<link rel="stylesheet" type="text/css" href="/shopping/user/page_goods/css/goods_common.css"/>
+		<link rel="stylesheet" type="text/css" href="/shopping/user/page_cart/css/cart.css"/>
+	</head>
+	<body>
+		<div class="page">
+
+			<div class="top">
+				<div class="top_inner">
+					<div class="ti_left">
+						<span>欢迎光临本站！</span>
+						<a href="/shopping/user/page_goods/index.html">返回首页</a>
+						<a href="/shopping/user/page_goods/index.html">~~~</a>
+					</div>
+					<div class="ti_center">
+						<a href="#">adv</a>
+					</div>
+					<div class="ti_right">
+						<a href="/shopping/user/page_user/center_orderlist.html">我的订单</a>&nbsp;
+						<a href="/shopping/user/page_user/center.html">用户中心</a>&nbsp;
+						<a href="/shopping/admin/login.html">管理员登录</a>&nbsp;
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+
+			<div class="space20px"></div>
+			<div class="head">
+				<div class="head_inner">
+					<div class="hi_logo">
+						<a href="/shopping/user/page_goods/index.html">网站LOGO</a>
+					</div>
+					<div class="hi_search" style="float: right;">
+						<form action="#" method="get">
+							<input type="text" name="search_key" class="search_key"/>
+							<input type="submit" value="搜索" class="search_submit" />
+						</form>
+					</div>
+					<!--<div class="hi_cartbtn">
+						<a href="../cart/cart.html" class="hic_cartbtn">购物车</a>
+					</div>-->
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="space20px"></div>
+
+
+			<div class="nav">
+				<div class="nav_inner">
+					<div class="ni_categorys">
+						<a class="nic_btna" href="JavaScript:void(0);">全部商品分类</a>
+						<div class="nic_block" style="display: none;">
+							<ul>
+								<li>
+									<h6>分类一</h6>
+									<p>
+										<a href="#">关键字1</a>
+										<a href="#">关键字1</a>
+										<a href="#">关键字1</a>
+									</p>
+								</li>
+								<li>
+									<h6>分类一</h6>
+									<p>
+										<a href="#">关键字1</a>
+										<a href="#">关键字1</a>
+										<a href="#">关键字1</a>
+									</p>
+								</li>
+								<li>
+									<h6>分类一</h6>
+									<p>
+										<a href="#">关键字1</a>
+										<a href="#">关键字1</a>
+										<a href="#">关键字1</a>
+									</p>
+								</li>
+								<li>
+									<h6>分类一</h6>
+									<p>
+										<a href="#">关键字1</a>
+										<a href="#">关键字1</a>
+										<a href="#">关键字1</a>
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="ni_activity">
+						<a href="#">满百包邮</a>
+						<a href="#">充值优惠</a>
+						<a href="#">新会员专区</a>
+						<a href="#">每日开团</a>
+						<a href="#">新品预告</a>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			
+			
+			
+			
+			
+			<div class="space10px"></div>
+			<div class="main">
+				<div class="main_inner">
+					<div class="mi_cart">
+						<div class="catbox">
+						  <table id="cartTable" cellpadding="0" cellspacing="1" border="0">
+						    <thead>
+						      <tr>
+						        <th><label>
+						            <input class="check-all check" type="checkbox"/>&nbsp;&nbsp;全选</label></th>
+						        <th>商品</th>
+						        <th>单价</th>
+						        <th>数量</th>
+						        <th>小计</th>
+						        <th>操作</th>
+						      </tr>
+						    </thead>
+						    <tbody>
+						      <tr>
+						        <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+						        <td class="goods">
+						        	<a href="../page_goods/detail.html"><img src="../../goodsImg/goods.jpg" alt=""/></a>
+						        	<span>
+						        		<a href="../page_goods/detail.html">【嘟嘟衣舍】韩国时尚前卫设计师最新力作潮的你哭不买就计师最新力作潮的你哭不买就后悔限量版</a>
+						        	</span>
+						        </td>
+						        <td class="price">5999.88</td>
+						        <td class="count"><span class="reduce"></span>
+						          <input class="count-input" type="text" value="1"/>
+						          <span class="add">+</span></td>
+						        <td class="subtotal">5999.88</td>
+						        <td class="operation"><span class="delete">删除</span></td>
+						      </tr>
+						      <tr>
+						        <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+						        <td class="goods">
+						        	<a href="../page_goods/detail.html"><img src="../../goodsImg/goods.jpg" alt=""/></a>
+						        	<span>
+						        		<a href="../page_goods/detail.html">【嘟嘟衣舍】韩国时尚前卫设计师最新力作潮的你哭不买就计师最新力作潮的你哭不买就后悔限量版</a>
+						        	</span>
+						        </td>
+						        <td class="price">3888.50</td>
+						        <td class="count"><span class="reduce"></span>
+						          <input class="count-input" type="text" value="1"/>
+						          <span class="add">+</span></td>
+						        <td class="subtotal">3888.50</td>
+						        <td class="operation"><span class="delete">删除</span></td>
+						      </tr>
+						      <tr>
+						        <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+						        <td class="goods">
+						        	<a href="../page_goods/detail.html"><img src="../../goodsImg/goods.jpg" alt=""/></a>
+						        	<span>
+						        		<a href="../page_goods/detail.html">【嘟嘟衣舍】韩国时尚前卫设计师最新力作潮的你哭不买就计师最新力作潮的你哭不买就后悔限量版</a>
+						        	</span>
+						        </td>
+						        <td class="price">1428.50</td>
+						        <td class="count"><span class="reduce"></span>
+						          <input class="count-input" type="text" value="1"/>
+						          <span class="add">+</span></td>
+						        <td class="subtotal">1428.50</td>
+						        <td class="operation"><span class="delete">删除</span></td>
+						      </tr>
+						      <tr>
+						        <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+						        <td class="goods">
+						        	<a href="../page_goods/detail.html"><img src="../../goodsImg/goods.jpg" alt=""/></a>
+						        	<span>
+						        		<a href="../page_goods/detail.html">【嘟嘟衣舍】韩国时尚前卫设计师最新力作潮的你哭不买就计师最新力作潮的你哭不买就后悔限量版</a>
+						        	</span>
+						        </td>
+						        <td class="price">640.60</td>
+						        <td class="count"><span class="reduce"></span>
+						          <input class="count-input" type="text" value="1"/>
+						          <span class="add">+</span></td>
+						        <td class="subtotal">640.60</td>
+						        <td class="operation"><span class="delete">删除</span></td>
+						      </tr>
+						    </tbody>
+						  </table>
+						  <div class="cartTable_foot" id="cartTable_foot">
+						    <label class="fl select-all"><input type="checkbox" class="check-all check"/>&nbsp;&nbsp;全选</label>
+						    <a class="fl delete" id="deleteAll" href="javascript:;">清空</a>
+						    <div class="fr closing check_payment">结 算</div>
+						    <input type="hidden" id="cartTotalPrice" />
+						    <div class="fr total">合计：￥<span id="priceTotal">0.00</span></div>
+						    <div class="fr selected" id="selected">已选商品<span id="selectedTotal">0</span>件</div>
+						    <div class="selected-view">
+						      <div id="selectedViewList" class="clearfix">
+						        <div><img src=""><span>取消选择</span></div>
+						      </div>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="space10px"></div>
+			
+			
+			
+			
+			<div class="foot">
+				<div class="foot_inner">
+					<div class="fi_public">
+						<a href="#">关于我们</a>
+						<span>&nbsp;|&nbsp;</span>
+						<a href="#">投资者</a>
+						<span>&nbsp;|&nbsp;</span>
+						<a href="#">加入我们</a>
+						<span>&nbsp;|&nbsp;</span>
+						<a href="#">联系我们</a>
+						<span>&nbsp;|&nbsp;</span>
+						<a href="#">网站地图</a>
+						<span>&nbsp;|&nbsp;</span>
+						<a href="#">法律声明</a>
+					</div>
+					<div class="space20px"></div>
+					<p class="fi_copy">(c) Copyright 2016 new. All Rights Reserved. </p>
+				</div>
+			</div>
+		</div>
+		
+<script src="/shopping/js/jQuery.1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/shopping/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+<script src="/shopping/js/shopping_common.js" type="text/javascript" charset="utf-8"></script>
+<script src="/shopping/js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+<script src="/shopping/js/getcategoryandkeys.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+$(function(){
+	var user_name_cookie = $.cookie("user_name_cookie"); 
+	var goods_ttnum = new Array();
+	var goods_id = "";
+	var cart_goods_num = 0;
+	var selectedTotal_val = 0;
+	var priceTotal_val = 0;
+	
+	$.ajax({
+		type:"post",
+		url:"/shopping/user/getLogoAndCopyright.do",
+		success:function(data){
+			LogoAndCopyright_val = eval("("+data+")");
+			$(".hi_logo a").attr("style","background: url(/img/"+LogoAndCopyright_val.logo_img+");");
+			$(".fi_copy").text(LogoAndCopyright_val.copyright_detail);
+		}
+	});
+	
+	if(user_name_cookie == undefined || user_name_cookie == "null") {
+		layer.alert("客官，您尚未登录，即将帮您跳转到登录页面~~", {icon: 5},function(){
+			window.location.href = "/shopping/user/page_user/login.html?loginfrom=page_user/center.html";
+		});
+	} else {
+		$(".ti_left").html("<span>欢迎光临本站！</span><a href='/shopping/user/page_user/center.html'>"+user_name_cookie+"</a>&nbsp;<a href='JavaScript:void(0);' class='logout_btn'>退出登录</a>");
+	}
+	
+	$.ajax({
+		type:"post",
+		url:"/shopping/user/getUserCart.do",
+		data:{"user_name":user_name_cookie,"from":"cart"},
+		success:function(data){
+			if(data == "[]") {
+				$(".catbox").html("<h1>您的购物车中还没有商品，请添加</h1>");
+			}
+			var user_cart_goodsinfos = eval("("+data+")");
+			var _html = "";
+			var flag_invalid = false;
+			var flag_ischeckall = true;
+			var tr_class_val = "";
+			for (var i = 0; i < user_cart_goodsinfos.length; i++) {
+				//alert(user_cart_goodsinfos[i].goods_name);
+				flag_invalid = false;
+				tr_class_val = "";
+				if(user_cart_goodsinfos[i].ischosen == 1) {
+					tr_class_val = "on";
+				} 
+				goods_ttnum[i] = user_cart_goodsinfos[i].goods_ttnum;
+				
+				
+				//下面的方法，如果某商品库存为0，最后应该给用户一个提示，然后把这个商品删掉，
+				//即把这一行清空，但是然后要把相应的goods_num[]重新设置到对应每一行
+				if(user_cart_goodsinfos[i].goods_ttnum < 1) {
+					flag_invalid = true;
+					if(tr_class_val == "on") {
+						tr_class_val = "on invalid_user_cart_goods";
+					} else {
+						tr_class_val = "invalid_user_cart_goods";
+					}
+				}
+				tr_class_val += "goods_id_" + user_cart_goodsinfos[i].goods_id;
+				
+					_html += "<tr class='"+tr_class_val+"'>";
+				if(user_cart_goodsinfos[i].ischosen == 1) {
+					 _html += "<td class='checkbox'><input class='check-one check' type='checkbox' checked='checked'/></td>";
+					 selectedTotal_val += user_cart_goodsinfos[i].goods_num;
+					 priceTotal_val = priceTotal_val + user_cart_goodsinfos[i].goods_num * user_cart_goodsinfos[i].goods_curprice;
+				} else {
+					 _html += "<td class='checkbox'><input class='check-one check' type='checkbox'/></td>";
+					 flag_ischeckall = false;
+				}
+				    _html += "<td class='goods'>"
+		        	       + "<a href='/shopping/user/page_goods/detail.html?goods_id="+ user_cart_goodsinfos[i].goods_id +"'><img src='/shopping/goodsImg/"+user_cart_goodsinfos[i].goods_img+"' alt=''/></a>"
+		        	       + "<span>"
+		        		   + "<a href='/shopping/user/page_goods/detail.html?goods_id="+ user_cart_goodsinfos[i].goods_id +"'>"+user_cart_goodsinfos[i].goods_name+"</a>"
+		        		   + "</span>"
+		        		   + "</td>"
+		        		   + "<td class='price'>"+new Number(user_cart_goodsinfos[i].goods_curprice).toFixed(2)+"</td>"
+		                   + "<td class='count'><span class='reduce'>-</span>"
+		                   + "<input class='count-input' type='text' value='"+user_cart_goodsinfos[i].goods_num+"'/>"
+		                   + "<span class='add'>+</span></td>"
+		                   + "<td class='subtotal'>"+new Number(user_cart_goodsinfos[i].goods_num*user_cart_goodsinfos[i].goods_curprice).toFixed(2)+"</td>"
+		                   + "<td class='operation'><span class='delete'>删除</span></td>"
+		     			   + "</tr>";
+		     			   cart_goods_num++;
+			}
+			//alert(_html);
+			$("#cartTable tbody").html(_html);
+			if(flag_ischeckall == false) {
+				$(".check-all").attr("checked",false);
+			} else {
+				$(".check-all").attr("checked","checked");
+			}
+			priceTotal_val = new Number(priceTotal_val).toFixed(2);
+			$("#selectedTotal").text(selectedTotal_val);
+			$("#priceTotal").text(priceTotal_val);
+		}
+	});
+	
+	$(".logout_btn").live("click", function(){
+		$.cookie("user_name_cookie", null,{path: "/"});
+		location.reload();
+		//$.removeCookie("user_name_cookie");
+		$(".ti_left").html("<span>欢迎光临本站！</span>"
+						 + "<a href='/shopping/user/page_user/login.html?loginfrom=page_goods/index.html'>请登录</a>&nbsp;"
+						 + "<a href='/shopping/user/page_user/register.html?regfrom=page_goods/index.html'>免费注册</a>");
+	});
+	
+	$(".check-all").live("click",function(){
+		selectedTotal_val = 0;
+		priceTotal_val = 0;
+		if($(this).is(":checked") == true) {
+			$(".check-one").attr("checked","checked");
+			$(".check-all").attr("checked","checked");
+			for (var i = 0; i < cart_goods_num; i++) {
+				selectedTotal_val += parseInt($("tbody tr:nth-child("+(i+1)+") .count-input").val());
+				priceTotal_val += parseFloat($("tbody tr:nth-child("+(i+1)+") .subtotal").text());
+			}
+			priceTotal_val = new Number(priceTotal_val).toFixed(2);
+			
+			$.ajax({
+				type:"post",
+				url:"/shopping/user/changeUserCart.do",
+				data:{"user_name":user_name_cookie,"from":"check_all"},
+				success:function(msg){
+					
+				}
+			});
+		} else {
+			$(".check-one").attr("checked",false);
+			$(".check-all").attr("checked",false);
+			selectedTotal_val = 0;
+			priceTotal_val = 0;
+			priceTotal_val = new Number(priceTotal_val).toFixed(2);
+			
+			$.ajax({
+				type:"post",
+				url:"/shopping/user/changeUserCart.do",
+				data:{"user_name":user_name_cookie,"from":"uncheck_all"},
+				success:function(msg){
+					
+				}
+			});
+			
+		}
+			$("#selectedTotal").text(selectedTotal_val);
+			$("#priceTotal").text(priceTotal_val);
+	});
+	
+	
+	
+	
+	$(".check-one").live("click",function(){
+		var checked_goods_id = $(this).parent().parent().attr("class").split("_")[2];
+		selectedTotal_val = parseInt(selectedTotal_val);
+		priceTotal_val = parseFloat(priceTotal_val);
+		//alert(selectedTotal_val);
+		//alert(priceTotal_val);
+		
+		var flag_check_all = true;
+		if($(this).is(":checked") == true) {
+			for (var i = 0; i < cart_goods_num; i++) {
+			//alert($("tbody tr:nth-child("+(i+1)+") .check-one").attr("checked"));
+			//alert($(this).parent().parent().parent("tbody tr:nth-child("+(i+1)+")").children("input").attr("checked"));
+				if($("tbody tr:nth-child("+(i+1)+") .check-one").attr("checked") == undefined) {
+					flag_check_all = false;
+				}
+			}
+			if(flag_check_all == false) {
+				$(".check-all").attr("checked",false);
+			} else {
+				$(".check-all").attr("checked",true);
+			}
+			
+			
+			selectedTotal_val += parseInt($(this).parent().siblings().children(".count-input").val());
+			priceTotal_val += parseFloat($(this).parent().siblings(".subtotal").text());
+			$.ajax({
+				type:"post",
+				url:"/shopping/user/changeUserCart.do",
+				data:{"user_name":user_name_cookie,"goods_id":checked_goods_id,"from":"check_one"},
+				success:function(msg){
+					
+				}
+			});
+		} else {
+			$(".check-all").attr("checked",false);
+			selectedTotal_val -= parseInt($(this).parent().siblings().children(".count-input").val());
+			priceTotal_val -= parseFloat($(this).parent().siblings(".subtotal").text());
+			
+			$.ajax({
+				type:"post",
+				url:"/shopping/user/changeUserCart.do",
+				data:{"user_name":user_name_cookie,"goods_id":checked_goods_id,"from":"uncheck_one"},
+				success:function(msg){
+					
+				}
+			});
+		}
+		priceTotal_val = new Number(priceTotal_val).toFixed(2);
+		$("#selectedTotal").text(selectedTotal_val);
+		$("#priceTotal").text(priceTotal_val);
+	});
+	
+	$(".reduce").live("click",function(){
+		var $obj = $(this);
+		var flag_isChosen_ornot = $obj.parent().siblings(".checkbox").children("input").is(":checked");
+		var checked_goods_id = $(this).parent().parent().attr("class").split("_")[2];
+		selectedTotal_val = parseInt(selectedTotal_val);
+		priceTotal_val = parseFloat(priceTotal_val);
+		var this_goods_count = parseInt($(this).siblings(".count-input").val());
+		var this_goods_curprice = parseFloat($(this).parent().siblings(".price").text());
+		var this_goods_ttprice = parseFloat($(this).parent().siblings(".subtotal").text());
+		if(this_goods_count <= 1) {
+			layer.alert('客官，不能将件数减为1件以下，若要删除该商品请点右边删除链接~~', {icon: 5});
+			if(flag_isChosen_ornot == true){
+				selectedTotal_val = selectedTotal_val - this_goods_count + 1;
+				priceTotal_val = priceTotal_val - this_goods_ttprice + this_goods_curprice;
+			}
+			this_goods_count = 1;
+			this_goods_ttprice = this_goods_curprice;
+			$.ajax({
+				type:"post",
+				url:"/shopping/user/changeUserCart.do",
+				data:{"user_name":user_name_cookie,"goods_id":checked_goods_id,"from":"reducetoone"},
+				success:function(msg){
+					
+				}
+			});	
+			
+		} else {
+			this_goods_count -= 1;
+			this_goods_ttprice = this_goods_ttprice - this_goods_curprice;
+			if(flag_isChosen_ornot == true){
+				selectedTotal_val -= 1;
+				priceTotal_val -= this_goods_curprice;
+			}
+			
+			$.ajax({
+				type:"post",
+				url:"/shopping/user/changeUserCart.do",
+				data:{"user_name":user_name_cookie,"goods_id":checked_goods_id,"from":"reduce"},
+				success:function(msg){
+					
+				}
+			});	
+			$(this).siblings(".count-input").val(this_goods_count);
+			this_goods_ttprice = new Number(this_goods_ttprice).toFixed(2);
+			$(this).parent().siblings(".subtotal").text(this_goods_ttprice);
+			priceTotal_val = new Number(priceTotal_val).toFixed(2);
+			$("#selectedTotal").text(selectedTotal_val);
+			$("#priceTotal").text(priceTotal_val); 
+		}
+	});
+	
+	var this_goods_count_old = 0;
+	$(".count-input").live("focus",function(){
+		this_goods_count_old = parseInt($(this).val());
+		selectedTotal_val = parseInt(selectedTotal_val);
+		priceTotal_val = parseFloat(priceTotal_val);
+	}).live("blur",function(){
+		var $obj = $(this);
+		var flag_isChosen_ornot = $obj.parent().siblings(".checkbox").children("input").is(":checked");
+		var checked_goods_id = $(this).parent().parent().attr("class").split("_")[2];
+		var this_goods_count_new = parseInt($(this).val());
+		//var tr_index = parseInt($(this).parent().parent().index());
+		var this_goods_curprice = parseFloat($(this).parent().siblings(".price").text());
+		var this_goods_ttprice = parseFloat($(this).parent().siblings(".subtotal").text());
+		var $obj = $(this);
+		$.ajax({
+			type:"post",
+			url:"/shopping/user/changeUserCart.do",
+			data:{"user_name":user_name_cookie,"goods_id":checked_goods_id,"goods_num":this_goods_count_new,"from":"plusorreduce"},
+			success:function(msg){
+				if(msg == "toosmall") {
+					layer.alert('客官，不能将件数减为1件以下，若要删除该商品请点右边删除链接~~', {icon: 5});
+					if(flag_isChosen_ornot == true){
+						selectedTotal_val = selectedTotal_val - this_goods_count_old + 1;
+						priceTotal_val = priceTotal_val - this_goods_ttprice + this_goods_curprice;
+					}
+					this_goods_count_new = 1;
+					this_goods_ttprice = this_goods_curprice;
+					
+					$obj.val(this_goods_count_new);
+					this_goods_ttprice = new Number(this_goods_ttprice).toFixed(2);
+					$obj.parent().siblings(".subtotal").text(this_goods_ttprice);
+					priceTotal_val = new Number(priceTotal_val).toFixed(2);
+					$("#selectedTotal").text(selectedTotal_val);
+					$("#priceTotal").text(priceTotal_val);
+				} else if(msg == "success") {
+					if(flag_isChosen_ornot == true){
+						selectedTotal_val = selectedTotal_val - this_goods_count_old + this_goods_count_new;
+						priceTotal_val = priceTotal_val - this_goods_ttprice + this_goods_curprice * this_goods_count_new;
+					}
+					this_goods_ttprice = this_goods_curprice * this_goods_count_new;
+					
+					$obj.val(this_goods_count_new);
+					this_goods_ttprice = new Number(this_goods_ttprice).toFixed(2);
+					$obj.parent().siblings(".subtotal").text(this_goods_ttprice);
+					priceTotal_val = new Number(priceTotal_val).toFixed(2);
+					$("#selectedTotal").text(selectedTotal_val);
+					$("#priceTotal").text(priceTotal_val);
+				} else {
+					this_goods_count_new = parseInt(msg);
+					layer.alert('客官抱歉，该商品没有这么多库存~~', {icon: 5});
+					selectedTotal_val = selectedTotal_val - this_goods_count_old + this_goods_count_new;
+					priceTotal_val = priceTotal_val - this_goods_ttprice + this_goods_curprice * this_goods_count_new;
+					this_goods_ttprice = this_goods_curprice * this_goods_count_new;
+					$obj.val(this_goods_count_new);
+					this_goods_ttprice = new Number(this_goods_ttprice).toFixed(2);
+					$obj.parent().siblings(".subtotal").text(this_goods_ttprice);
+					priceTotal_val = new Number(priceTotal_val).toFixed(2);
+					$("#selectedTotal").text(selectedTotal_val);
+					$("#priceTotal").text(priceTotal_val);
+				}
+			}
+		});	
+		
+	}); 
+	
+	
+	$(".add").live("click",function(){
+		var $obj = $(this);
+		var flag_isChosen_ornot = $obj.parent().siblings(".checkbox").children("input").is(":checked");
+		var checked_goods_id = $(this).parent().parent().attr("class").split("_")[2];
+		selectedTotal_val = parseInt(selectedTotal_val);
+		priceTotal_val = parseFloat(priceTotal_val);
+		var this_goods_count_old = parseInt($(this).siblings(".count-input").val());
+		//alert(this_goods_count_old);
+		var this_goods_curprice = parseFloat($(this).parent().siblings(".price").text());
+		var this_goods_ttprice = parseFloat($(this).parent().siblings(".subtotal").text());
+		var this_goods_count_new = this_goods_count_old + 1;
+		$.ajax({
+			type:"post",
+			url:"/shopping/user/changeUserCart.do",
+			data:{"user_name":user_name_cookie,"goods_id":checked_goods_id,"goods_num":this_goods_count_new,"from":"plus"},
+			success:function(msg){
+				//alert(9);
+				if(msg != "success") {
+					this_goods_count_new = parseInt(msg);
+					layer.alert('客官抱歉，该商品没有这么多库存~~', {icon: 5});
+					if(flag_isChosen_ornot == true) {
+						selectedTotal_val = selectedTotal_val - this_goods_count_old + this_goods_count_new;
+						priceTotal_val = priceTotal_val - this_goods_ttprice + this_goods_curprice * this_goods_count_new;
+					}
+					this_goods_ttprice = this_goods_curprice * this_goods_count_new;
+					
+					$obj.siblings(".count-input").val(this_goods_count_new);
+					this_goods_ttprice = new Number(this_goods_ttprice).toFixed(2);
+					$obj.parent().siblings(".subtotal").text(this_goods_ttprice);
+					priceTotal_val = new Number(priceTotal_val).toFixed(2);
+					$("#selectedTotal").text(selectedTotal_val);
+					$("#priceTotal").text(priceTotal_val); 
+				} else if(msg == "success") {
+					if(flag_isChosen_ornot == true) {
+						selectedTotal_val = selectedTotal_val - this_goods_count_old + this_goods_count_new;
+						priceTotal_val = priceTotal_val - this_goods_ttprice + this_goods_curprice * this_goods_count_new;
+					}
+					this_goods_ttprice = this_goods_curprice * this_goods_count_new;
+					
+					$obj.siblings(".count-input").val(this_goods_count_new);
+					this_goods_ttprice = new Number(this_goods_ttprice).toFixed(2);
+					$obj.parent().siblings(".subtotal").text(this_goods_ttprice);
+					priceTotal_val = new Number(priceTotal_val).toFixed(2);
+					$("#selectedTotal").text(selectedTotal_val);
+					$("#priceTotal").text(priceTotal_val); 
+				}
+			}
+		});	
+	}); 
+		
+	$(".delete").live("click",function(){
+		var $obj = $(this);
+		var flag_isChosen_ornot = $obj.parent().siblings(".checkbox").children("input").is(":checked");
+		var checked_goods_id = $(this).parent().parent().attr("class").split("_")[2];
+		selectedTotal_val = parseInt(selectedTotal_val);
+		priceTotal_val = parseFloat(priceTotal_val);
+		var this_goods_count = parseInt($(this).parent().siblings(".count").children(".count-input").val());
+		var this_goods_ttprice = parseFloat($(this).parent().siblings(".subtotal").text());
+		//var flag_deleteornot = false;
+		layer.confirm("客官，您确定要删除这条商品嘛？",{icon: 3, title:'提示'}, function(index){
+			//flag_deleteornot = true;
+			$.ajax({
+				type:"post",
+				url:"/shopping/user/changeUserCart.do",
+				data:{"user_name":user_name_cookie,"goods_id":checked_goods_id,"from":"delete"},
+				success:function(msg){
+					if(msg == "success") {
+						if(flag_isChosen_ornot == true) {
+							selectedTotal_val = selectedTotal_val -  this_goods_count;
+							priceTotal_val = priceTotal_val - this_goods_ttprice;
+						}
+						$obj.parent().parent("tr").empty();
+						priceTotal_val = new Number(priceTotal_val).toFixed(2);
+						$("#selectedTotal").text(selectedTotal_val);
+						$("#priceTotal").text(priceTotal_val); 
+						layer.close(index);
+					}
+				}
+			});
+			
+		});
+	});
+	
+	$("#deleteAll").live("click",function(){
+		var $obj = $(this);
+		layer.confirm("客官，您确定要清空您的购物车嘛？往日的辛苦岂不是白费了~~",{icon: 3, title:'提示'}, function(index){
+			$.ajax({
+				type:"post",
+				url:"/shopping/user/changeUserCart.do",
+				data:{"user_name":user_name_cookie,"from":"deleteall"},
+				success:function(msg){
+					if(msg == "success") {
+						$obj.parent().parent(".catbox").html("<h1>您的购物车中还没有商品，请添加</h1>");
+						layer.close(index);
+					}
+				}
+			});
+			
+		});
+	});
+		
+	$(".check_payment").click(function(){
+		if($("#selectedTotal").text() == 0) {
+			layer.msg("客官，请至少选择一件商品~~");
+		} else {
+			window.location.href = "/shopping/user/page_cart/cart_confirm.html";
+		}
+	});
+	
+	
+});
+</script>
+	</body>
+</html>

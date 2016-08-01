@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+.register_form_left{
+	width: 400px;float: left;
+	background-color: #ffffff;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-shadow: 0px 0px 8px #555555;
+	-webkit-box-shadow: 0px 0px 8px #555555;
+	box-shadow: 0px 0px 8px #555555;
+}
+.register_form_right{
+	width: 595px;min-height: 600px;float:right;background: url(../img/register_bg.png) no-repeat center;text-indent: -99999px;
+}
+.register_form_left h1{font-size: 20px;;text-align: center;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

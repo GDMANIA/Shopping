@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>免费注册页面</title>
+		<link rel="SHORTCUT ICON" href="/shopping/chenchen.ico">
+		<link rel="stylesheet" type="text/css" href="/shopping/css/shopping_common.css"/>
+		<link rel="stylesheet" type="text/css" href="/shopping/user/page_user/css/user_common.css"/>
+		<link rel="stylesheet" type="text/css" href="/shopping/user/page_user/css/register.css"/>
+	</head>
+	<body>
+		
+		
+		<div class="page">
+			<div class="page_inner">
+				<div class="header">
+					<div class="header_inner">
+						<div class="login_header_left">
+							<a href="/shopping/user/page_goods/index.html">LOGO图片</a>						
+						</div>	
+						<div class="login_header_right">
+							<span>已有账号，<a href="/shopping/user/page_user/login.html?loginfrom=page_goods/index.html"><strong>立即登录！</strong></a></span>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="space50px"></div>
+				<div class="content">
+					<div class="content_inner">
+						<div class="register_form_left" >
+							<div class="space30px"></div>
+							<div class="space50px"></div>
+							<h1>快速免费注册</h1>
+							<div class="space30px"></div>
+							<div class="error_msg" style="height:18px;">
+								<span class="error_msg_above"></span>
+							</div>
+							<div class="space20px"></div>
+							<form action="" method="post">
+								<div class="lftr">
+									<div class="lftr_left">
+										<label for="user_name">账　号</label>										
+									</div>
+									<div class="lftr_center">
+										<input type="text" name="user_name" class="user_name" id="user_name"/>
+									</div>
+									<div class="lftr_right">
+										<span class="error_msg user_name_error">*</span>
+									</div>
+									<div class="clear space30px"></div>
+								</div>
+								
+								<div class="lftr">
+									<div class="lftr_left">
+										<label for="user_password">密　码</label>										
+									</div>
+									<div class="lftr_center">
+										<input type="password" name="user_password" class="user_password" id="user_password"/>
+									</div>
+									<div class="lftr_right">
+										<span class="error_msg user_password_error">*</span>
+									</div>
+									<div class="clear space30px"></div>
+								</div>
+								
+								<div class="lftr">
+									<div class="lftr_left">
+										<label for="user_repassword">密　码</label>										
+									</div>
+									<div class="lftr_center">
+										<input type="password" name="user_repassword" class="user_repassword" id="user_repassword"/>
+									</div>
+									<div class="lftr_right">
+										<span class="error_msg user_repassword_error">*</span>
+									</div>
+									<div class="clear space30px"></div>
+								</div>
+								
+								
+								<div class="lftr">
+									<div class="lftr_left">
+										<label for="user_verifyCode">验证码</label>										
+									</div>
+									<div class="lftr_center">
+										<input type="text" name="user_verifyCode" class="user_verifyCode" id="user_verifyCode"/>
+										<img src="/shopping/user/getVerifyCode.do" alt="验证码" title="点我刷新" class="user_verifyCode_img"/>
+									</div>
+									<div class="lftr_right">
+										<span class="error_msg verifyCode_error_msg">*</span>
+									</div>
+									<div class="clear space30px"></div>
+								</div>
+								
+								<div class="lftr">
+									<div class="lftr_left">
+										&nbsp;								
+									</div>
+									<div class="lftr_center">
+										<input type="button" value="立即注册" class="user_submit user_submit_button" style="cursor:pointer"/>
+										<!-- <input type="submit" value="立即注册" class="user_submit"/> -->
+									</div>
+									<div class="lftr_right">
+										&nbsp;
+									</div>
+									<div class="clear space30px"></div>
+								</div>
+								<div class="space30px"></div>
+								<div class="space50px"></div>
+							</form>
+						</div>
+						<div class="register_form_right">login_form_left</div>
+						
+						
+						<div class="clear"></div>
+					</div>
+				</div>
+
+			<div class="foot">
+				<div class="foot_inner">
+					<div class="fi_public">
+						<a href="#">关于我们</a>
+						<span>&nbsp;|&nbsp;</span>
+						<a href="#">投资者</a>
+						<span>&nbsp;|&nbsp;</span>
+						<a href="#">加入我们</a>
+						<span>&nbsp;|&nbsp;</span>
+						<a href="#">联系我们</a>
+						<span>&nbsp;|&nbsp;</span>
+						<a href="#">网站地图</a>
+						<span>&nbsp;|&nbsp;</span>
+						<a href="#">法律声明</a>
+					</div>
+					<div class="space20px"></div>
+					<p class="fi_copy">(c) Copyright 2016 new. All Rights Reserved. </p>
+				</div>
+			</div>
+		</div>
+			</div>
+		
+<script src="/shopping/js/jQuery.1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".user_verifyCode_img").click(function(){
+		var src_val = $(".user_verifyCode_img").attr("src").toString().split("?")[0];
+		src_val = src_val + "?time=" + new Date().getTime();
+		$(".user_verifyCode_img").attr("src",src_val);
+	}).css({"cursor":"pointer"});
+	
+	$.ajax({
+		type:"post",
+		url:"/shopping/user/getLogoAndCopyright.do",
+		success:function(data){
+			LogoAndCopyright_val = eval("("+data+")");
+			$(".hi_logo a").attr("style","background: url(/img/"+LogoAndCopyright_val.logo_img+");");
+			$(".fi_copy").text(LogoAndCopyright_val.copyright_detail);
+		}
+	});
+
+
+	$("#user_name").focus(function(){
+		$(".user_name_error").html("*").css({"color":"red"});
+		//$(".register_form_left > .error_msg").html("");
+	}).blur(function(){
+		var user_name_val = $("#user_name").val();
+		if(user_name_val == "") {
+			$(".error_msg_above").html("请输入用户名！");
+			$(".user_name_error").html("* 错误！").css({"color":"red"});
+		} else {
+			var email_test = new RegExp("^([a-z0-9A-Z]+[-|\\.]?)+[a-z0-9A-Z]@([a-z0-9A-Z]+(-[a-z0-9A-Z]+)?\\.)+[a-zA-Z]{2,}$");
+			var telnum_test = new RegExp("^((13[0-9])|(15[^4,\\d])|(18[0,5-9]))\\d{8}$");
+			var flag_email_test = email_test.test(user_name_val);
+			var flag_telnum_test = telnum_test.test(user_name_val);
+			if(!flag_email_test && !flag_telnum_test) {
+				$(".error_msg_above").html("请输入正确的邮箱或手机号作为你的用户名！");
+				$(".user_name_error").html("* 错误！").css({"color":"red"});
+			} else {
+				$.ajax({
+					type:"post",
+					url:"/shopping/user/registerCheckByAjax.do",
+					data:"user_name=" + user_name_val,
+					success:function(msg){
+						if(msg == "username exists") {
+							$(".error_msg_above").html("您输入的用户名已经存在！");
+							$(".user_name_error").html("* 错误！").css({"color":"red"});
+						} else {
+							$(".error_msg_above").html("");
+							$(".user_name_error").html("* 正确！").css({"color":"green"});
+						}
+					}
+				});
+				
+			}
+		}
+	});
+	
+ 	$("#user_password").focus(function(){
+ 		$(".user_password_error").html("*").css({"color":"red"});
+	}).blur(function(){
+		var user_password_val = $("#user_password").val();
+		if(user_password_val == "") {
+			$(".error_msg_above").html("请输入密码！");
+			$(".user_password_error").html("* 错误！").css({"color":"red"});
+		} else {
+			var password_test = new RegExp("^[a-zA-Z0-9_]{6,16}$");
+			var flag_password_test = password_test.test(user_password_val);
+			if(!flag_password_test) {
+				$(".error_msg_above").html("请输入6~16位以大小写字母、数字或下划线组成的密码！");
+				$(".user_password_error").html("* 错误！").css({"color":"red"});
+			} else {
+				$(".error_msg_above").html("");
+				$(".user_password_error").html("* 正确！").css({"color":"green"});
+			}
+		}
+	}); 
+ 	
+ 	$("#user_repassword").focus(function(){
+ 		$(".user_repassword_error").html("*").css({"color":"red"});
+	}).blur(function(){
+		var user_password_val = $("#user_password").val();
+		var user_repassword_val = $("#user_repassword").val();
+		if(user_repassword_val == "") {
+			$(".error_msg_above").html("请再次输入密码！");
+			$(".user_repassword_error").html("* 错误！");
+		} else if(user_password_val != user_repassword_val){
+			$(".error_msg_above").html("两次密码输入不一致，请重新输入！");
+			$(".user_repassword_error").html("* 错误！").css({"color":"red"});
+		} else {
+			$(".error_msg_above").html("");
+			$(".user_repassword_error").html("* 正确！").css({"color":"green"});	
+		}
+	}); 
+ 	
+ 	$("#user_verifyCode").focus(function(){
+ 		$(".verifyCode_error_msg").html("*").css({"color":"red"});
+	}).blur(function(){
+		var verifyCode_val = $("#user_verifyCode").val();
+		if(verifyCode_val == "") {
+			$(".error_msg_above").html("请输入验证码！").css({"color":"red"});
+			$(".verifyCode_error_msg").html("* 错误！").css({"color":"red"});
+		} else {
+			$.ajax({
+				type:"post",
+				url:"/shopping/user/registerCheckByAjax.do",
+				data:"verifyCode_val=" + verifyCode_val + "&from=verifyCode_val",
+				success:function(msg){
+					if(msg == "right verifyCode") {
+						$(".error_msg_above").html("");
+						$(".verifyCode_error_msg").html("* 正确！").css({"color":"green"});	
+					} else if(msg == "wrong verifyCode"){
+						$(".error_msg_above").html("您输入的验证码有误，请重新输入！");
+						$(".verifyCode_error_msg").html("* 错误！").css({"color":"red"});
+					}
+				}
+			});
+		}
+	});
+ 	
+ 	
+ 	$(".user_submit_button").click(function(){
+ 		var user_name_val = $("#user_name").val();
+ 		var user_password_val = $("#user_password").val();
+ 		var user_repassword_val = $("#user_repassword").val();
+ 		var verifyCode_val = $("#user_verifyCode").val();
+ 		$.ajax({
+ 			type:"post",
+ 			url:"/shopping/user/registerCheckByAjax.do",
+ 			data:{"user_name":user_name_val,"user_password":user_password_val,"user_repassword":user_repassword_val,"verifyCode_val":verifyCode_val,"from":"onsubmit"},
+ 			success:function(msg){
+ 				if(msg == "noUserName") {
+ 					$(".error_msg_above").html("请输入用户名！");
+ 					$(".user_name_error").html("* 错误！").css({"color":"red"});
+ 					return;
+ 				} else if(msg == "invalid username") {
+ 					$(".error_msg_above").html("请输入正确的邮箱或手机号作为你的用户名！");
+ 					$(".user_name_error").html("* 错误！").css({"color":"red"});
+ 					return;
+ 				} else if(msg == "username exists") {
+ 					$(".error_msg_above").html("您输入的用户名已经存在！");
+ 					$(".user_name_error").html("* 错误！").css({"color":"red"});
+ 					return;
+ 				} else if(msg == "noPassword") {
+ 					$(".error_msg_above").html("请输入密码！");
+ 					$(".user_password_error").html("* 错误！").css({"color":"red"});
+ 					return;
+ 				} else if(msg == "invalid password") {
+ 					$(".error_msg_above").html("请输入6~16位以大小写字母、数字或下划线组成的密码！");
+ 					$(".user_password_error").html("* 错误！");
+ 					return;
+ 				} else if(msg == "noRePassword") {
+ 					$(".error_msg_above").html("请再次输入密码！");
+ 					$(".user_repassword_error").html("* 错误！").css({"color":"red"});
+ 					return;
+ 				} else if(msg == "wrong repassword") {
+ 					$(".error_msg_above").html("两次密码输入不一致，请重新输入！");
+ 					$(".user_repassword_error").html("* 错误！").css({"color":"red"});
+ 					return;
+ 				} else if(msg == "noVerifyCode") {
+ 					$(".error_msg_above").html("请输入验证码！").css({"color":"red"});
+ 					$(".verifyCode_error_msg").html("* 错误！").css({"color":"red"});
+ 					return;
+ 				} else if(msg == "wrong verifyCode") {
+ 					$(".error_msg_above").html("您输入的验证码有误，请重新输入！");
+ 					$(".verifyCode_error_msg").html("* 错误！").css({"color":"red"});
+ 					return;
+ 				} else if(msg == "success") {
+ 					var str = window.location.href.split("?")[1];
+ 					if(str == undefined) {
+ 						str = "regfrom=page_user/login.html";
+ 					}
+ 					window.location.href="/shopping/user/page_user/registerSuccess.html?"+str;
+ 					return;
+ 				}
+ 			}
+ 		});
+ 	}); 
+});
+</script>		
+	</body>
+</html>

@@ -1,0 +1,84 @@
+@charset "utf-8";
+*{margin: 0px;padding: 0px;font-size: 13px;font-family: "microsoft yahei";}
+a{font-size: 13px;color: #333333;text-decoration: none;}
+a:hover{color:#ff6600;}
+img{border: none;}
+ul , dl , ol{list-style: none;}
+
+
+.fl{float:left;}
+.fr{float:right;}
+.clear{clear: both;}
+.error_msg{color: red;font-size: 12px;text-align: center;}
+.space5px{clear: both;height: 5px;}
+.space10px{clear: both;height: 10px;}
+.space20px{clear: both;height: 20px;}
+.space30px{clear: both;height: 30px;}
+.space40px{clear: both;height: 40px;}
+.space50px{clear: both;height: 50px;}
+
+
+
+/*顶部*/
+.top{background: #f8f8f8;border-bottom: 1px solid #f2f2f2;}
+.top_inner{width: 1000px;height: 30px;margin: 0px auto;}
+.top_inner a{display: inline-block;height: 30px;line-height: 30px;}
+	.ti_left{width: 250px;height: 30px;float: left;}
+	.ti_center{width: 250px;height: 30px;float: left;}
+	.ti_right{width: 500px;height: 30px;float: left;text-align: right;}
+
+
+
+
+
+/*头部*/
+.head{text-align: center;}
+.head_inner{width: 1000px;height: 80px;margin: 0px auto;text-align: left;}
+	.hi_logo{width: 200px;height: 80px;float: left;}
+	.hi_logo a{display:inline-block;width: 200px;height: 80px;background: url(../img/shopping_logo.png);text-indent: -99999px;}
+	.hi_search{width: 550px;height: 80px;float: left;}
+	.hi_search form input.search_key{display: inline-block;width: 300px;height:26px;line-height: 30px;border: 2px solid #D81E06;outline: none;padding-left: 5px;float: left;margin-top: 25px;margin-left: 100px;}
+	.hi_search form input.search_submit{display: inline-block;width: 100px;height: 30px;border: 0px;background:#D81E06;color: #FFFFFF;font-size: 16px;font-weight:bold;float: left;margin-top: 25px;cursor: pointer;}
+	.hi_search form input.search_submit:hover{color: #D3D3D3;}
+	.hi_cartbtn{width:250px;height: 80px;line-height: 80px;float: right;text-align:right;}
+	.hi_cartbtn a.hic_cartbtn{display: inline-block;width: 120px;height: 30px;line-height: 30px;text-align: center;background: url(../img/cart_btn_bg.png) #F2F2F2 no-repeat 20px center;text-indent: 3em;border: 1px solid #D3D3D3;}
+	.hi_cartbtn a.hic_cartbtn:hover{
+			background: url(../img/cart_btn_bg.png) #FFFFFF no-repeat 20px center;
+			-moz-border-radius: 2px;
+			-webkit-border-radius: 2px;
+			border-radius: 2px;
+			-moz-box-shadow: 0px 0px 6px #d3d3d3;
+			-webkit-box-shadow: 0px 0px 6px #d3d3d3;
+			box-shadow: 0px 0px 6px #d3d3d3;
+	}
+	
+
+/*主菜单*/
+.nav{text-align: center;border-bottom: 2px solid#D81E06;}
+.nav_inner{width: 1000px;height: 35px;text-align: left;margin: 0px auto;}
+.ni_categorys{background: #D81E06;width: 180px;height: 35px;float: left;position: relative;z-index: 10;}
+.ni_categorys a.nic_btna{display:inline-block;width: 180px;height: 35px;line-height: 35px;text-align: center;font-weight:900;font-size: 14px;color: #FFFFFF;}
+.ni_categorys .nic_block{background: #C81623;border-left: 2px solid #D81E06;border-bottom: 2px solid #D81E06;}
+.ni_categorys .nic_block ul li{padding-top: 5px;padding-bottom: 5px;color: #FFFFFF;}
+.ni_categorys .nic_block ul li:hover{background: #5C5251;}
+.ni_categorys .nic_block ul li h6{text-indent: 1em;color: ##C81623;height: 25px;line-height: 25px;margin-bottom: 5px;}
+.ni_categorys .nic_block ul li p{text-align: center;}
+.ni_categorys .nic_block ul li p a{display: inline-block;color: #FFFFFF;}
+.ni_categorys .nic_block ul li p a:hover{text-decoration: underline;}
+.ni_activity{width: 820px;height: 35px;float: left;}
+.ni_activity a{display: inline-block;padding-left: 10px;padding-right: 10px;height: 35px;line-height: 35px;font-weight: bold;font-size: 14px;float: left;}
+
+/*底部*/
+.foot{text-align: center;padding-top: 30px;padding-bottom: 50px;background: #5C5251;}
+.foot_inner{}
+	.fi_public{}
+	.fi_public a{color: #FFFFFF;}
+	.fi_public span{color: #D3D3D3;}
+	.fi_copy{color: #FFFFFF;}
+
+
+
+
+
+
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<a href="#" class="aaa" title="aaaa111" id="aaa111">111</a>
+<a href="#" class="aaa" title="aaaa112" id="aaa112">222</a>
+<a href="#" class="aaa" title="aaaa113" id="aaa113">333</a> 
+
+	<div class="mifc_block">
+		<dl>
+			<dt>
+				<a href="#"> <img src="/shopping/goodsImg/goods.jpg" />
+				</a>
+			</dt>
+			<dd>
+				<a href="#">韩国时尚前卫设计师最新力作潮的你哭不买就后悔限量版</a>
+			</dd>
+			<dd>
+				<span>已售：<b>1689</b>件
+				</span>&nbsp;&nbsp;&nbsp; <span>评价：<strong>1189</strong>次
+				</span>
+			</dd>
+			<dd title="11111">
+				<a href="#" class="mifcb_collect_btn">收藏</a>&nbsp;&nbsp; <a href="#"
+					class="mifcb_addtocart_btn">加入购物车</a>
+				<div class="space10px"></div>
+			</dd>
+		</dl>
+	</div>
+	<div class="mifc_block">
+		<dl>
+			<dt>
+				<a href="#"> <img src="/shopping/goodsImg/goods.jpg" />
+				</a>
+			</dt>
+			<dd>
+				<a href="#">韩国时尚前卫设计师最新力作潮的你哭不买就后悔限量版</a>
+			</dd>
+			<dd>
+				<span>已售：<b>1689</b>件
+				</span>&nbsp;&nbsp;&nbsp; <span>评价：<strong>1189</strong>次
+				</span>
+			</dd>
+			<dd title="11111">
+				<a href="#" class="mifcb_collect_btn">收藏</a>&nbsp;&nbsp; <a href="#"
+					class="mifcb_addtocart_btn">加入购物车</a>
+				<div class="space10px"></div>
+			</dd>
+		</dl>
+	</div>
+	<div class="mifc_block">
+		<dl>
+			<dt>
+				<a href="#"> <img src="/shopping/goodsImg/goods.jpg" />
+				</a>
+			</dt>
+			<dd>
+				<a href="#">韩国时尚前卫设计师最新力作潮的你哭不买就后悔限量版</a>
+			</dd>
+			<dd>
+				<span>已售：<b>1689</b>件
+				</span>&nbsp;&nbsp;&nbsp; <span>评价：<strong>1189</strong>次
+				</span>
+			</dd>
+			<dd title="11111" >
+				<div ></div>
+				<a href="#" class="mifcb_collect_btn">收藏</a>&nbsp;&nbsp; <a href="#"
+					class="mifcb_addtocart_btn">加入购物车</a>
+				<div class="space10px"></div>
+			</dd>
+		</dl>
+	</div>
+
+	<input type="">
+
+<script src="/shopping/js/jQuery.1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".aaa").click(function(){
+		alert($(this).attr("id"));
+	}); 
+	
+	$(".mifcb_collect_btn").live("click",function(){
+		/* var mifcb_collect_btn_class = this.className;
+		if(user_name_cookie == undefined || user_name_cookie == "null") {
+			layer.alert("客官，请先登录才能收藏商品~~", {icon: 5});
+		} else { */
+				/* var flag = mifcb_collect_btn_class.split(" ")[2];
+				var goods_id = mifcb_collect_btn_class.split(" ")[1].split("_")[2];
+		        if(msg == "uncollect") {
+						/* $("this").attr("class", "mifcb_collect_btn goods_id_"+goods_id+" collect_false");
+						$("this").css({"background":"url(/shopping/user/page_goods/img/collect_goods.png)  no-repeat 10px center;"});
+						$("this").text("收藏"); 
+						$("this:parent").html("<a href='#' class='mifcb_collect_btn goods_id_"+goods_id+" collect_false'>收藏</a>&nbsp;&nbsp;")
+					} else {
+						/* $("this").attr("class", "mifcb_collect_btn goods_id_"+goods_id+" collect_true");
+						$("this").css({"background":"url(/shopping/user/page_goods/img/collect_goods_active.png)  no-repeat 10px center;"});
+						$("this").text("已收"); 
+						$("this:parent").html("<a href='#' class='mifcb_collect_btn goods_id_"+goods_id+" collect_true' style='background: url(/shopping/user/page_goods/img/collect_goods_active.png) no-repeat 10px center;'>已收</a>&nbsp;&nbsp;");
+					} */
+					
+		/* $("this:parent").html("<a href='#' class='mifcb_collect_btn goods_id_ collect_true' style='color:red;'>已收</a>&nbsp;&nbsp;"
+							 +"<a href='#' class='mifcb_addtocart_btn'>加入购物车</a> <div class='space10px'></div>"); */
+				
+			alert($("this").parent().attr("title"));		
+					
+		
+	});
+	
+});
+</script>
+</body>
+</html>

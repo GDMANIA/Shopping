@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="shortcut icon" href="favicon.ico">
+		<meta charset="UTF-8">
+		<title>用户登录页面</title>
+		<link rel="SHORTCUT ICON" href="/shopping/chenchen.ico">
+		<link rel="stylesheet" type="text/css" href="/shopping/css/shopping_common.css"/>
+		<link rel="stylesheet" type="text/css" href="/shopping/user/page_user/css/user_common.css"/>
+		<link rel="stylesheet" type="text/css" href="/shopping/user/page_user/css/login.css"/>
+	</head>
+	<body>
+		
+		<div class="page">
+			<div class="page_inner">
+				<div class="header">
+					<div class="header_inner">
+						<div class="login_header_left">
+							<a href="/shopping/user/page_goods/index.html">LOGO图片</a>						
+						</div>	
+						<div class="login_header_right">
+							<span>还没有账号，<a href="/shopping/user/page_user/register.html?regfrom=page_user/login.html"><strong>立即免费注册！</strong></a></span>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="space50px"></div>
+				<div class="content">
+					<div class="content_inner">
+						<div class="login_form_left">login_form_left</div>
+						<div class="login_form_right">
+							<div class="space30px"></div>
+							<div class="space50px"></div>
+							<h1>用户登录</h1>
+							<div class="space30px"></div>
+							<div class="error_msg" style="height:18px;">
+								<span class="error_msg_above"></span>
+							</div>
+							<div class="space20px"></div>
+							<form action="/shopping/user/loginCheck.do" method="post" >
+								<div class="lftr">
+									<div class="lftr_left">
+										<label for="user_name">账　号</label>										
+									</div>
+									<div class="lftr_center">
+										<input type="text" name="user_name" class="user_name" id="user_name"/>
+									</div>
+									<div class="lftr_right">
+										<span class="error_msg user_name_error">*</span>
+									</div>
+									<div class="clear space30px"></div>
+								</div>
+								
+								<div class="lftr">
+									<div class="lftr_left">
+										<label for="user_password">密　码</label>										
+									</div>
+									<div class="lftr_center">
+										<input type="password" name="user_password" class="user_password" id="user_password"/>
+									</div>
+									<div class="lftr_right">
+										<span class="error_msg user_password_error">*</span>
+									</div>
+									<div class="clear space30px"></div>
+								</div>
+								
+								<div class="lftr">
+									<div class="lftr_left">
+										<label for="user_verifyCode">验证码</label>										
+									</div>
+									<div class="lftr_center">
+										<input type="text" name="user_verifyCode" class="user_verifyCode" id="user_verifyCode"/>
+										<img src="/shopping/user/getVerifyCode.do" alt="验证码" title="点我刷新" class="user_verifyCode_img"/>
+									</div>
+									<div class="lftr_right">
+										<span class="error_msg verifyCode_error_msg">*</span>
+									</div>
+									<div class="clear space30px"></div>
+								</div>
+								
+								<div class="lftr">
+									<div class="lftr_left">
+										&nbsp;								
+									</div>
+									<div class="lftr_center submit_control">
+										<input type="button" value="立即登录" class="user_submit user_submit_button" style="cursor:pointer"/>
+										<!-- <input type="button" value="立即登录" class="user_submit"/> -->
+									</div>
+									<div class="lftr_right">
+										&nbsp;
+									</div>
+									<div class="clear space30px"></div>
+								</div>
+								<div class="space30px"></div>
+								<div class="space50px"></div>
+							</form>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+
+			<div class="foot">
+				<div class="foot_inner">
+					<div class="fi_public">
+						<a href="#">关于我们</a>
+						<span>&nbsp;|&nbsp;</span>
+						<a href="#">投资者</a>
+						<span>&nbsp;|&nbsp;</span>
+						<a href="#">加入我们</a>
+						<span>&nbsp;|&nbsp;</span>
+						<a href="#">联系我们</a>
+						<span>&nbsp;|&nbsp;</span>
+						<a href="#">网站地图</a>
+						<span>&nbsp;|&nbsp;</span>
+						<a href="#">法律声明</a>
+					</div>
+					<div class="space20px"></div>
+					<p class="fi_copy">(c) Copyright 2016 new. All Rights Reserved. </p>
+				</div>
+			</div>
+		</div>
+			</div>
+		</div>
+		
+<script src="/shopping/js/jQuery.1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/shopping/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+<script src="/shopping/js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".user_verifyCode_img").click(function(){
+		var src_val = $(".user_verifyCode_img").attr("src").toString().split("?")[0];
+		src_val = src_val + "?time=" + new Date().getTime();
+		$(".user_verifyCode_img").attr("src",src_val);
+	}).css({"cursor":"pointer"});
+	
+	$.ajax({
+		type:"post",
+		url:"/shopping/user/getLogoAndCopyright.do",
+		success:function(data){
+			LogoAndCopyright_val = eval("("+data+")");
+			$(".hi_logo a").attr("style","background: url(/img/"+LogoAndCopyright_val.logo_img+");");
+			$(".fi_copy").text(LogoAndCopyright_val.copyright_detail);
+		}
+	});
+	
+	var user_name_cookie = $.cookie("user_name_cookie"); 
+	var str = window.location.href.split("?")[1];
+	if(str == undefined) {
+		str = "page_goods/index.html";
+	} else {
+		str = str.split("=")[1];
+	}
+	//alert(user_name_cookie);
+	if(user_name_cookie != undefined && user_name_cookie != "null") {
+		layer.alert('客官，您已经登录过啦！马上帮您跳转到用户中心~~', {icon: 5},function(){
+			window.location.href = "/shopping/user/page_user/center.html";
+		});
+	}
+
+$("#user_name").focus(function(){
+	$(".user_name_error").html("*").css({"color":"red"});
+}).blur(function(){
+	var user_name_val = $("#user_name").val();
+	$.ajax({
+		type:"post",
+		url:"/shopping/user/loginCheckByAjax.do",
+		data:"user_name=" + user_name_val,
+		success:function(msg){
+			if(msg == "noUserName") {
+				$(".error_msg_above").html("请输入用户名！");
+				$(".user_name_error").html("* 错误！").css({"color":"red"});
+			} else if(msg == "username not exist") {
+				$(".error_msg_above").html("您输入的用户名不存在，请先注册！");
+				$(".user_name_error").html("* 错误！").css({"color":"red"});
+			} else {
+				$(".error_msg_above").html("");
+				$(".user_name_error").html("* 正确！").css({"color":"green"});
+			}
+		}
+	});		
+});
+
+$("#user_password").focus(function(){
+	$(".user_password_error").html("*").css({"color":"red"});
+}).blur(function(){
+	var user_name_val = $("#user_name").val();
+	var user_password_val = $("#user_password").val();
+	$.ajax({
+		type:"post",
+		url:"/shopping/user/loginCheckByAjax.do",
+		data:"user_name=" + user_name_val + "&user_password=" + user_password_val,
+		success:function(msg){
+			if(msg == "noUserName") {
+				$(".error_msg_above").html("请输入用户名！");
+				$(".user_name_error").html("* 错误！").css({"color":"red"});
+			} else if(msg == "username not exist") {
+				$(".error_msg_above").html("您输入的用户名不存在，请先注册！");
+				$(".user_name_error").html("* 错误！").css({"color":"red"});
+			} else if(msg == "noPassword") {
+				$(".error_msg_above").html("请输入密码！");
+				$(".user_password_error").html("* 错误！").css({"color":"red"});
+			} else if(msg == "wrong password"){
+				$(".error_msg_above").html("您输入的密码有误，请重新输入！");
+				$(".user_password_error").html("* 错误！").css({"color":"red"});
+			} else if(msg == "success"){
+				$(".error_msg_above").html("");
+				$(".user_password_error").html("* 正确！").css({"color":"green"});	
+			}
+		}
+	});
+}); 
+	
+$("#user_verifyCode").focus(function(){
+		$(".verifyCode_error_msg").html("*").css({"color":"red"});
+}).blur(function(){
+	var verifyCode_val = $("#user_verifyCode").val();
+	$.ajax({
+		type:"post",
+		url:"/shopping/user/loginCheckByAjax.do",
+		data:"verifyCode_val=" + verifyCode_val + "&from=verifyCode_val",
+		success:function(msg){
+			if(msg == "noVerifyCode") {
+				$(".error_msg_above").html("请输入验证码！").css({"color":"red"});
+				$(".verifyCode_error_msg").html("* 错误！").css({"color":"red"});
+			} else if(msg == "wrong verifyCode"){
+				$(".error_msg_above").html("您输入的验证码有误，请重新输入！");
+				$(".verifyCode_error_msg").html("* 错误！").css({"color":"red"});
+			} else if(msg == "right verifyCode"){
+				$(".error_msg_above").html("");
+				$(".verifyCode_error_msg").html("* 正确！").css({"color":"green"});	
+			} 
+		}
+	});
+});
+
+$(".user_submit_button").click(function(){
+	var user_name_val = $("#user_name").val();
+	var user_password_val = $("#user_password").val();
+	var verifyCode_val = $("#user_verifyCode").val();
+	var flag = false;
+	$.ajax({
+		type:"post",
+		url:"/shopping/user/loginCheckByAjax.do",
+		data:{"user_name":user_name_val,"user_password":user_password_val,"verifyCode_val":verifyCode_val,"from":"onsubmit"},
+		success:function(msg){
+			if(msg == "noUserName") {
+				$(".error_msg_above").html("请输入用户名！");
+				$(".user_name_error").html("* 错误！").css({"color":"red"});
+				flag = false;
+				return;
+			} else if(msg == "username not exist") {
+				$(".error_msg_above").html("您输入的用户名不存在，请先注册！");
+				$(".user_name_error").html("* 错误！").css({"color":"red"});
+				flag = false;
+				return;
+			} else if(msg == "noPassword") {
+				$(".error_msg_above").html("请输入密码！");
+				$(".user_password_error").html("* 错误！").css({"color":"red"});
+				flag = false;
+				return;
+			} else if(msg == "wrong password") {
+				$(".error_msg_above").html("您输入的密码有误，请重新输入！");
+				$(".verifyCode_error_msg").html("* 错误！").css({"color":"red"});
+				flag = false;
+				return;
+			} else if(msg == "noVerifyCode") {
+				$(".error_msg_above").html("请输入验证码！").css({"color":"red"});
+				$(".verifyCode_error_msg").html("* 错误！").css({"color":"red"});
+				flag = false;
+				return;
+			} else if(msg == "wrong verifyCode") {
+				$(".error_msg_above").html("您输入的验证码有误，请重新输入！");
+				$(".verifyCode_error_msg").html("* 错误！").css({"color":"red"});
+				flag = false;
+				return;
+			} else if(msg == "success") {
+				//$.cookie('user_name_cookie', user_name_val,{expires: 3, path: "/shopping/user"}); 
+				//$.cookie('user_name_cookie', user_name_val,{expires: 3, path: "/shopping/user"}); 
+				//$.cookie('user_name_cookie', user_name_val,{path: "/shopping/user"}); 
+				$.cookie("user_name_cookie", user_name_val,{expires: 3,path: "/"}); 
+				var str = window.location.href.split("?")[1];
+				if(str == undefined) {
+					str = "page_goods/index.html";
+				} else {
+					str = str.split("=")[1];
+				}
+				window.location.href="/shopping/user/"+str;
+				flag = true;
+				return;
+			}
+		}
+	});
+}); 
+});
+
+</script>
+	</body>
+</html>

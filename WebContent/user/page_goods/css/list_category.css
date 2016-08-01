@@ -1,0 +1,53 @@
+@charset "utf-8";
+.main{text-align: center;}
+.main_inner{width: 1000px;margin: 0px auto;text-align: left;}
+.mi_categray{}
+
+.mi_categray table{background:#D3D3D3;}
+.mi_categray table td{background: #FFFFFF;}
+.mi_categray table td a{display:inline-block;padding: 3px 10px;font-size: 13px;color: #333333;border: 1px solid #D3D3D3;margin:5px 5px;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		border-radius: 4px;}
+.mi_categray table td a:hover{font-weight:900;border: 1px solid #F22D00;}
+.mi_categray a.a_active{background: #F22D00;color: #FFFFFF;border:1px solid #F22D00;}			
+.mi_categray table th{background: #F2F2F2;text-align: center;width: 150px;padding-top: 10px;padding-bottom: 10px;}
+.mi_categray table td.level2 a{font-size: 10px;padding: 2px 5px;}
+
+.mi_sort{border: 1px solid #D3D3D3;}
+.mi_sort span.mis_label{display: inline-block;width: 150px;text-align: center;background: #F2F2F2;padding-top: 10px;padding-bottom: 10px;border-right: 1px solid #D3D3D3;}
+.mi_sort a{}
+.mi_sort a.sort_active{color: #F22D00;font-weight: bold;}
+
+
+
+
+.mi_list{padding-bottom: 20px;}
+.mifc_block{width: 218px;text-align: center;margin: 10px 15px;float: left;border: 1px solid #F2F2F2;}
+	.mifc_block:hover{
+	background-color: #ffffff;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	-moz-box-shadow: 0px 0px 8px #d3d3d3;
+	-webkit-box-shadow: 0px 0px 8px #d3d3d3;
+	box-shadow: 0px 0px 8px #d3d3d3;
+	}
+	.mifc_block dl dt a img{display: inline-block;width: 200px;height: 200px;margin-top: 10px;margin-bottom: 10px;}
+	.mifc_block dl dd{width: 200px;margin: 5px auto;;}
+	
+	.mifc_block dl dd a.mifcb_collect_btn{display: inline-block;padding:5px 10px;border: 1px solid #F2F2F2;background: url(../img/collect_goods.png) no-repeat 10px center;text-indent: 2.5em;font-size: 11px;float: left;}
+	.mifc_block dl dd a.mifcb_collect_btn:hover{
+	-moz-box-shadow: 0px 0px 8px #d3d3d3;
+	-webkit-box-shadow: 0px 0px 8px #d3d3d3;
+	box-shadow: 0px 0px 8px #d3d3d3;
+	}
+	.mifc_block dl dd a.mifcb_addtocart_btn{display: inline-block;padding:5px 10px;border: 1px solid #F2F2F2;background: url(../img/add_to_cart_btn_bg.png) no-repeat 10px center;text-indent: 2.5em;font-size: 11px;float: right;}
+	.mifc_block dl dd a.mifcb_addtocart_btn:hover{
+		background-image: url(../img/add_to_cart_btn_bg_active.png);
+	-moz-box-shadow: 0px 0px 8px #d3d3d3;
+	-webkit-box-shadow: 0px 0px 8px #d3d3d3;
+	box-shadow: 0px 0px 8px #d3d3d3;
+	}
+
+

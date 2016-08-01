@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+.main{text-align: center;}
+.main_inner{width: 1000px;margin: 0px auto;text-align: left;}
+
+.mi_address{}
+.mi_address h2{height: 30px;line-height: 30px;border-bottom: 2px solid #D3D3D3;}
+	.mia_list{}
+	.mia_list .mial_block{width:230px;float: left;border: 2px dashed #D3D3D3;margin: 5px 5px;padding: 5px 3px;}
+	.mia_list .mialb_active{border-color: #B20000;}
+		.mial_block h5 ,.mial_block h6 ,.mial_block p{font-size: 11px;}
+		.mial_block h5{text-align: center;}
+		.mial_block p{}
+			.mialb_operate{text-align: right;}
+			.mialb_operate a{color: #B20000;}
+	.mia_tomgr{text-align:right;}
+	.mia_tomgr a{color: #B20000;}
+	
+	
+	
+	
+.mi_pay{}
+.mi_pay h2{height: 30px;line-height: 30px;border-bottom: 2px solid #D3D3D3;}
+	.mip_typelist{}
+	.mip_typelist a{display: inline-block;border: 2px solid #D3D3D3;padding: 5px 10px;}
+	.mip_typelist a:hover{border: 2px solid #B20000;}
+	.mip_typelist a.mipt_active{border: 2px solid #B20000;}
+	
+	
+.mi_order{}
+.mi_order h2{height: 30px;line-height: 30px;border-bottom: 2px solid #D3D3D3;}
+	.mio_items{}
+	.mio_items .mioi_item{width: 478px;border: 1px solid #D3D3D3 ;float: left;margin: 10px 10px;}
+		.mioii_left{width: 120px;float: left;margin: 5px 5px;}
+		.mioii_left a{display: inline-block;border: 1px solid #D3D3D3;padding: 5px 5px;}
+		.mioii_left a img{display:inline-block;width: 100px;height: 100px;float: left;}
+		.mioii_right{width: 348px;float: left;}
+
+
+
+.mi_orderbar{background: #f4f4f4;border-top: 1px solid #e8e8e8;text-align: right;}
+	.miob_price{text-align: right;margin: 10px 20px;}
+	.miob_price span{color:#555555;}
+	.miob_price b{color: #F22D00;font-size: 20px;}
+	.miob_address{color: #666666;margin: 10px 20px;}
+
+
+
+.mi_ordersubmit{text-align: right;margin: 0px 20px;}
+.mi_ordersubmit a{display: inline-block;padding: 10px 20px;background:#E54044;color: #FFFFFF;font-weight: bold;font-size: 16px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+.mi_ordersubmit a:hover{background: #F22D00;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+.main{text-align: center;}
+.main_inner{width: 1000px;margin: 0px auto;text-align: left;}
+
+
+.mi_content{background:#EEF9FF;border: 1px solid #E4F3FD;text-align: center;padding-top: 20px;padding-bottom: 40px;}
+.mi_content a.mic_status{display: block;height:70px;line-height: 70px;background: url(../img/order_create_success.png) no-repeat 400px center;font-size: 26px;color: #FF6600;text-align: center;text-indent: 6em;}
+	.mic_orderinfo{border-top: 1px solid #CFF0FF;border-bottom: 1px solid #CFF0FF;background: #D3EFFE;height: 40px;line-height: 40px;}
+	.mic_orderinfo *{font-size: 16px;}	
+	.mic_orderinfo strong{color: #F22D00;}
+	.mic_btns a{display: inline-block;padding: 5px 15px;background: #F22D00;margin: 20px auto;color: #FFFFFF;font-weight: bold;}
+	.mic_tips b{color: #F22D00;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

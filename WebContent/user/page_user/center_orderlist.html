@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>我的订单</title>
+<link rel="SHORTCUT ICON" href="/shopping/chenchen.ico">
+<link rel="stylesheet" type="text/css"
+	href="/shopping/css/shopping_common.css" />
+<link rel="stylesheet" type="text/css"
+	href="/shopping/user/page_user/css/user_common.css" />
+<link rel="stylesheet" type="text/css"
+	href="/shopping/user/page_user/css/center_orderlist.css" />
+</head>
+<body>
+
+	<div class="page">
+		<div class="top">
+			<div class="top_inner">
+				<div class="ti_left">
+					<span>欢迎光临本站！</span> <a href="login.html">请登录</a>&nbsp; <a
+						href="register.html">免费注册</a>
+				</div>
+				<div class="ti_center">
+					<a href="#">adv</a>
+				</div>
+				<div class="ti_right">
+					<a href="/shopping/user/page_user/center_orderlist.html">我的订单</a>&nbsp;
+					<a href="/shopping/user/page_user/center.html">用户中心</a>&nbsp; <a
+						href="/shopping/admin/login.html">管理员登录</a>&nbsp;
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+
+		<div class="space20px"></div>
+		<div class="head">
+			<div class="head_inner">
+				<div class="hi_logo">
+					<a href="/shopping/user/page_goods/index.html">网站LOGO</a>
+				</div>
+				<div class="hi_search">
+					<form action="#" method="get">
+						<input type="text" name="search_key" class="search_key" /> <input
+							type="submit" value="搜索" class="search_submit" />
+					</form>
+				</div>
+				<div class="hi_cartbtn">
+					<a href="/shopping/user/page_cart/cart.html" class="hic_cartbtn">购物车</a>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="space20px"></div>
+
+
+		<div class="nav">
+			<div class="nav_inner">
+				<div class="ni_categorys">
+					<a class="nic_btna" href="JavaScript:void(0);">全部商品分类</a>
+					<div class="nic_block" style="display: none;">
+						<ul>
+							<li>
+								<h6>分类一</h6>
+								<p>
+									<a href="#">关键字1</a> <a href="#">关键字1</a> <a href="#">关键字1</a>
+								</p>
+							</li>
+							<li>
+								<h6>分类一</h6>
+								<p>
+									<a href="#">关键字1</a> <a href="#">关键字1</a> <a href="#">关键字1</a>
+								</p>
+							</li>
+							<li>
+								<h6>分类一</h6>
+								<p>
+									<a href="#">关键字1</a> <a href="#">关键字1</a> <a href="#">关键字1</a>
+								</p>
+							</li>
+							<li>
+								<h6>分类一</h6>
+								<p>
+									<a href="#">关键字1</a> <a href="#">关键字1</a> <a href="#">关键字1</a>
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="ni_activity">
+					<a href="#">满百包邮</a> <a href="#">充值优惠</a> <a href="#">新会员专区</a> <a
+						href="#">每日开团</a> <a href="#">新品预告</a>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+
+		<div class="space20px"></div>
+
+		<div class="page_inner">
+			<div class="content">
+				<div class="content_inner">
+					<div class="uc_left">
+						<div class="space30px"></div>
+						<h2>用户基本信息</h2>
+						<div class="space30px"></div>
+						<div class="ucl_info">
+							<ul>
+								<li class="user_header"><b>头像：</b> &nbsp;&nbsp; <a
+									href="JavaScript:void(0);" class="userh_changebtn">重新选择</a> <span>
+										<img class="user_img"
+										src="/shopping/user/page_user/user_header_img/user_header01.png" />
+								</span></li>
+								<li><b>账户等级：</b> <span class="user_level">VIP1</span>&nbsp;&nbsp;
+								</li>
+								<li><b>账号：</b> <span class="user_name">yuzhilongx@163.com</span>
+								</li>
+								<li><b>密码：</b> <span class="user_password">******</span>&nbsp;&nbsp;
+									<a href="JavaScript:void(0);" class="ucli_resetpwd">修改</a></li>
+								<li><b>联系电话：</b> <span class="user_telnum">18994028888</span>&nbsp;&nbsp;
+									<a href="JavaScript:void(0);" class="ucli_resetphone">修改</a></li>
+								<li><b>邮箱：</b> <span class="user_email">273701121@qq.com</span>&nbsp;&nbsp;
+									<a href="JavaScript:void(0);" class="ucli_resetemail">修改</a></li>
+								<li><b>注册时间：</b> <span class="user_regtime">2016-12-10</span>
+								</li>
+								<li><b>最近登录：</b> <span class="user_lastlogintime">2016-12-10</span>
+								</li>
+							</ul>
+						</div>
+						<div class="space50px"></div>
+					</div>
+
+					<div class="uc_right">
+						<div class="ucr_order">
+							<a href="JavaScript:void(0);" class="ucro_quanbu">全部订单</a> <a
+								href="JavaScript:void(0);" class="ucro_daifukuan">待付款</a> <a
+								href="JavaScript:void(0);" class="ucro_daifahuo">待发货</a> <a
+								href="JavaScript:void(0);" class="ucro_daiqianshou">待签收</a> <a
+								href="JavaScript:void(0);" class="ucro_daipingjia">待评价</a>
+							<div class="clear space10px"></div>
+						</div>
+
+						<div class="ucr_orderlist">
+							<table class="ucrol_li" border="0" cellspacing="0"
+								cellpadding="0" width="100%">
+								<tr>
+									<td colspan="4">
+										<div class="ucro_title">
+											&nbsp; <span>2016-07-04 12:18:50</span> &nbsp;&nbsp;&nbsp; <span><b>订单号：</b>ABC1800519859820160709121018888888</span>
+											<a href="#" class="ucrot_delete">删除订单</a>
+										</div>
+									</td>
+								</tr>
+								<tr class="ucro_content">
+									<td>
+										<div class="ucroc_block">
+											<a href="../page_goods/detail.html" class="ucroc_img"> <img
+												src="../../goodsImg/goods.jpg" />
+											</a>
+											<p class="ucroc_title">韩国时尚前卫设计师最新力作潮的你哭不买就后悔限量版</p>
+											<span class="ucroc_count">x1</span>
+										</div>
+										<div class="ucroc_block">
+											<a href="#" class="ucroc_img"> <img
+												src="../../goodsImg/goods.jpg" />
+											</a>
+											<p class="ucroc_title">韩国时尚前卫设计师最新力作潮的你哭不买就后悔限量版</p>
+											<span class="ucroc_count">x1</span>
+										</div>
+									</td>
+									<td><span class="ucroc_pay">188.88元</span></td>
+									<td><span class="ucroc_status">待支付|已支付|待发货|已发货|待评价|已评价</span>
+									</td>
+									<td><span class="ucroc_operate"> <a
+											href="../user_order/order_pay_success.html">立即支付</a> <a
+											href="JavaScript:void(0);">确认收货</a> <a
+											href="JavaScript:void(0);" class="layer_order_evaluate">立即评价</a>
+									</span></td>
+								</tr>
+							</table>
+
+							<table class="ucrol_li" border="0" cellspacing="0"
+								cellpadding="0" width="100%">
+								<tr>
+									<td colspan="4">
+										<div class="ucro_title">
+											&nbsp; <span>2016-07-04 12:18:50</span> &nbsp;&nbsp;&nbsp; <span><b>订单号：</b>ABC1800519859820160709121018888888</span>
+											<a href="#" class="ucrot_delete">删除订单</a>
+										</div>
+									</td>
+								</tr>
+								<tr class="ucro_content">
+									<td>
+										<div class="ucroc_block">
+											<a href="#" class="ucroc_img"> <img
+												src="../../goodsImg/goods.jpg" />
+											</a>
+											<p class="ucroc_title">韩国时尚前卫设计师最新力作潮的你哭不买就后悔限量版</p>
+											<span class="ucroc_count">x1</span>
+										</div>
+									</td>
+									<td><span class="ucroc_pay">188.88元</span></td>
+									<td><span class="ucroc_status">待支付|已支付|待发货|已发货|待评价|已评价</span>
+									</td>
+									<td><span class="ucroc_operate"> <a
+											href="JavaScript:void(0);">立即支付</a> <a
+											href="JavaScript:void(0);">确认收货</a> <a
+											href="JavaScript:void(0);">立即评价</a>
+									</span></td>
+								</tr>
+							</table>
+							<!--<div class="ucro_block">
+									<div class="ucro_title">
+										&nbsp;
+										<span>2016-07-04 12:18:50</span>
+										&nbsp;&nbsp;&nbsp;
+										<span><b>订单号：</b>ABC20160709121018888888</span>
+										<a href="#" class="ucrot_delete">删除订单</a>
+									</div>
+									<div class="ucro_content">
+										<a href="#" class="ucroc_img">
+											<img src="../../goodsImg/goods.jpg"/>
+										</a>
+										<p class="ucroc_title">
+											韩国时尚前卫设计师最新力作潮的你哭不买就后悔限量版
+										</p>
+										<span class="ucroc_count">x1</span>
+										<span class="ucroc_pay">188.88元</span>
+										<span class="ucroc_status">待支付|已支付|待发货|已发货|待评价|已评价</span>
+										<span class="ucroc_operate">
+											<a href="JavaScript:void(0);">立即支付</a>
+											<a href="JavaScript:void(0);">确认收货</a>
+											<a href="JavaScript:void(0);">立即评价</a>
+										</span>
+										<div class="clear"></div>
+									</div>
+								</div>-->
+
+						</div>
+
+
+						<div class="space20px"></div>
+						<div class="ucr_recommend">
+							<h2>商家推荐</h2>
+							<div class="ucr_content">
+								<div class="ucrc_block">
+									<dl>
+										<dt>
+											<a href="detail.html"> <img
+												src="../../goodsImg/goods.jpg" />
+											</a>
+										</dt>
+										<dd>
+											<strong>￥</strong><b>28.00</b>
+										</dd>
+										<dd>
+											<a href="detail.html">韩国最前卫设计师设计最新产品精品休闲T恤</a>
+										</dd>
+									</dl>
+								</div>
+
+								<div class="ucrc_block">
+									<dl>
+										<dt>
+											<a href="detail.html"> <img
+												src="../../goodsImg/goods.jpg" />
+											</a>
+										</dt>
+										<dd>
+											<strong>￥</strong><b>28.00</b>
+										</dd>
+										<dd>
+											<a href="detail.html">韩国最前卫设计师设计最新产品精品休闲T恤</a>
+										</dd>
+									</dl>
+								</div>
+								<div class="ucrc_block">
+									<dl>
+										<dt>
+											<a href="detail.html"> <img
+												src="../../goodsImg/goods.jpg" />
+											</a>
+										</dt>
+										<dd>
+											<strong>￥</strong><b>28.00</b>
+										</dd>
+										<dd>
+											<a href="detail.html">韩国最前卫设计师设计最新产品精品休闲T恤</a>
+										</dd>
+									</dl>
+								</div>
+								<div class="clear"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="space50px"></div>
+
+			<div class="foot">
+				<div class="foot_inner">
+					<div class="fi_public">
+						<a href="#">关于我们</a> <span>&nbsp;|&nbsp;</span> <a href="#">投资者</a>
+						<span>&nbsp;|&nbsp;</span> <a href="#">加入我们</a> <span>&nbsp;|&nbsp;</span>
+						<a href="#">联系我们</a> <span>&nbsp;|&nbsp;</span> <a href="#">网站地图</a>
+						<span>&nbsp;|&nbsp;</span> <a href="#">法律声明</a>
+					</div>
+					<div class="space20px"></div>
+					<p class="fi_copy">(c) Copyright 2016 new. All Rights Reserved.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+
+
+	<!--显示全部头像 layer弹出窗口 div-->
+	<div class="layer_user_headers" style="display: none;">
+		<a href="JavaScript:void(0);"><img
+			src="user_header_img/user_header01.png" /></a> <a
+			href="JavaScript:void(0);"><img
+			src="user_header_img/user_header02.png" /></a> <a
+			href="JavaScript:void(0);"><img
+			src="user_header_img/user_header03.png" /></a> <a
+			href="JavaScript:void(0);"><img
+			src="user_header_img/user_header04.png" /></a> <a
+			href="JavaScript:void(0);"><img
+			src="user_header_img/user_header05.png" /></a> <a
+			href="JavaScript:void(0);"><img
+			src="user_header_img/user_header06.png" /></a> <a
+			href="JavaScript:void(0);"><img
+			src="user_header_img/user_header07.png" /></a> <a
+			href="JavaScript:void(0);"><img
+			src="user_header_img/user_header08.png" /></a> <a
+			href="JavaScript:void(0);"><img
+			src="user_header_img/user_header09.png" /></a> <a
+			href="JavaScript:void(0);"><img
+			src="user_header_img/user_header10.png" /></a> <a
+			href="JavaScript:void(0);"><img
+			src="user_header_img/user_header11.png" /></a> <a
+			href="JavaScript:void(0);"><img
+			src="user_header_img/user_header12.png" /></a> <a
+			href="JavaScript:void(0);"><img
+			src="user_header_img/user_header13.png" /></a> <a
+			href="JavaScript:void(0);"><img
+			src="user_header_img/user_header14.png" /></a> <a
+			href="JavaScript:void(0);"><img
+			src="user_header_img/user_header15.png" /></a> <a
+			href="JavaScript:void(0);"><img
+			src="user_header_img/user_header16.png" /></a> <a
+			href="JavaScript:void(0);"><img
+			src="user_header_img/user_header17.png" /></a> <a
+			href="JavaScript:void(0);"><img
+			src="user_header_img/user_header18.png" /></a> <a
+			href="JavaScript:void(0);"><img
+			src="user_header_img/user_header19.png" /></a> <a
+			href="JavaScript:void(0);"><img
+			src="user_header_img/user_header20.png" /></a> <a
+			href="JavaScript:void(0);"><img
+			src="user_header_img/user_header21.png" /></a> <a
+			href="JavaScript:void(0);"><img
+			src="user_header_img/user_header22.png" /></a> <a
+			href="JavaScript:void(0);"><img
+			src="user_header_img/user_header23.png" /></a> <a
+			href="JavaScript:void(0);"><img
+			src="user_header_img/user_header24.png" /></a> <a
+			href="JavaScript:void(0);"><img
+			src="user_header_img/user_header25.png" /></a> <a
+			href="JavaScript:void(0);"><img
+			src="user_header_img/user_header26.png" /></a> <a
+			href="JavaScript:void(0);"><img
+			src="user_header_img/user_header27.png" /></a> <a
+			href="JavaScript:void(0);"><img
+			src="user_header_img/user_header28.png" /></a>
+	</div>
+	<!-- 修改密码 -->
+	<div class="layer_user_password" style="display: none;">
+		<table border="0" cellspacing="0" cellpadding="0" width="100%">
+			<tr>
+			</tr>
+			<tr>
+				<td class="luam_left">原密码</td>
+				<td class="luam_right"><input type="password"
+					class="origin_user_password" id="origin_user_password"
+					name="origin_user_password" value="" /></td>
+				<td class="luam_origin_user_password_img"><img src=""></td>
+			</tr>
+			<tr>
+				<td class="luam_left">新密码</td>
+				<td class="luam_right"><input type="password"
+					class="new_user_password" id="new_user_password"
+					name="new_user_password" value="" /></td>
+				<td class="luam_new_user_password_img"><img src=""></td>
+			</tr>
+			<tr>
+				<td class="luam_left">确认密码</td>
+				<td class="luam_right"><input type="password"
+					class="new_user_repassword" name="new_user_repassword" value="" />
+				</td>
+				<td class="luam_new_user_repassword_img"><img src=""></td>
+			</tr>
+			<tr>
+				<td class="luam_left">&nbsp;</td>
+				<td class="luam_right"><input type="button" value="确认修改"
+					class="ucral_modify_submit user_password_modify_submit" /></td>
+			</tr>
+		</table>
+	</div>
+
+
+	<!--订单评价弹出框-->
+	<!-- <div class="layer_order_evaluate_panel" style="display: none;">
+		<div class="">
+			<p>
+				<b>订单号 : </b><span>ABC20160709121018888888</span>
+			</p>
+			<p>
+				<b>总金额 : </b><span>188.88元</span>
+			</p>
+			<div>
+				<textarea name="order_evaluate" class="order_evaluate" rows="" cols="">评价内容</textarea>
+			</div>
+			<input type="button" value="提交评价" class="ucral_modify_submit" style="background:lightgreen;width:100px;"/>
+		</div>
+	</div> -->
+	<script src="/shopping/js/jQuery.1.8.3.min.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="/shopping/layer/layer.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="/shopping/js/shopping_common.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="/shopping/js/jquery.cookie.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="/shopping/js/getcategoryandkeys.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script type="text/javascript">
+$(function(){
+	var user_name_cookie = $.cookie("user_name_cookie"); 
+	var user_password = "";
+	var useraddress_count = 0;
+	var add_address_layer;
+	var modify_address_layer;
+	var modify_useraddress_id_val;
+	var isdefault_address_val;
+	var default_address_id_val;
+	if(user_name_cookie == undefined || user_name_cookie == "null") {
+		layer.alert("客官，您尚未登录，即将帮您跳转到登录页面~~", {icon: 5},function(){
+			window.location.href = "/shopping/user/page_user/login.html?loginfrom=page_user/center.html";
+		});
+	}
+	
+	$.ajax({
+		type:"post",
+		url:"/shopping/user/getLogoAndCopyright.do",
+		success:function(data){
+			LogoAndCopyright_val = eval("("+data+")");
+			$(".hi_logo a").attr("style","background: url(/img/"+LogoAndCopyright_val.logo_img+");");
+			$(".fi_copy").text(LogoAndCopyright_val.copyright_detail);
+		}
+	});
+	
+	$.ajax({
+		type:"post",
+		url:"/shopping/user/getCookiesUser.do",
+		data:{"user_name":user_name_cookie},
+		success:function(data) {
+			var user = eval("("+data+")");
+			var user_level = user.user_level;
+			var user_name = user.user_name;
+			user_password = user.user_password;
+			var user_email = user.user_email;
+			var user_telnum = user.user_telnum;
+			var user_img = user.user_img;
+			var user_regtime = user.user_regtime.split(" ")[0];
+			var user_lastlogintime = user.user_lastlogintime;
+			$(".ti_left").html("<span>欢迎光临本站！</span><a href='/shopping/user/page_user/center.html'>"+user.user_name+"</a>&nbsp;<a href='JavaScript:void(0);' class='logout_btn'>退出登录</a>");
+			$(".user_img").attr("src",user_img);
+			$(".user_level").html("VIP"+user_level);
+			$(".user_name").html(user_name);
+			//$(".user_password").html(user_password);
+			if(user_telnum == "") {
+				$(".user_telnum").html("暂无，请添加");
+				$(".ucli_resetphone").html("添加");
+			} else {
+				$(".user_telnum").html(user_telnum.substring(0,4)+"****"+user_telnum.substring(8));	
+				$(".ucli_resetphone").html("修改");
+			}
+			if(user_email == "") {
+				$(".user_email").html("暂无，请添加");
+				$(".ucli_resetemail").html("添加");
+			} else {
+				$(".user_email").html(user_email.split("@")[0].substring(0,4)+"****@"+user_email.split("@")[1]);					
+				$(".ucli_resetemail").html("修改");
+			}
+			$(".user_regtime").html(user_regtime);
+			$(".user_lastlogintime").html(user_lastlogintime);
+			
+		}
+	});
+	
+	$.ajax({
+		type:"post",
+		url:"/shopping/user/getUserOrders.do",
+		data:{"user_name":user_name_cookie},
+		success:function(data) {
+			var user_order_goodsinfos = eval("("+data+")");
+			if(user_order_goodsinfos == "") {
+				$(".ucr_orderlist").html("<h2>客官，您还没有订单~~</h2>");
+			} else {
+				var _html = "";
+				var _html_evaluate = "";
+				for (var i = 0; i < user_order_goodsinfos.length; i++) {
+					if(user_order_goodsinfos[i].order_isdeleted == 2) {
+						continue;		 
+					}
+					_html += "<table class='ucrol_li user_order_id_"+user_order_goodsinfos[i].userorder_id+"' border='0' cellspacing='0' cellpadding='0' width='100%'>"
+						  + "<tr>"
+						  + "<td colspan='4'>"
+						  + "<div class='ucro_title'>"
+						  + "&nbsp;"
+						  + "<span>"+user_order_goodsinfos[i].order_createtime+"</span>"
+						  + "&nbsp;&nbsp;&nbsp;"
+						  + "<span class='ucrol_userorder_id'><b>订单号：</b>"+user_order_goodsinfos[i].userorder_id+"</span>";
+						  
+					if(user_order_goodsinfos[i].order_isdeleted == 0) {
+						  switch (user_order_goodsinfos[i].order_state) {
+							case 0:
+								_html += "<a href='JavaScript:void(0);' class='ucrot_delete ucrot_delete_above' style='background:url(/shopping/user/page_user/img/order_del_btn.png) no-repeat 10px center;'>删除订单</a>";
+								break;
+							case 1:
+							case 2:
+								_html += "";
+								break;
+							case 3:
+							case 4:
+							case 6:
+								_html += "<a href='JavaScript:void(0);' class='ucrot_delete ucrot_delete_above' style='background:url(/shopping/user/page_user/img/order_del_btn.png) no-repeat 10px center;'>删除订单</a>";
+								break;
+							default:
+								_html += "<a href='JavaScript:void(0);' class='ucrot_delete ucrot_delete_above' style='background:url(/shopping/user/page_user/img/order_del_btn.png) no-repeat 10px center;'>删除订单</a>";
+								break;
+							}	
+						  _html_evaluate += "<div class='layer_order_evaluate_panel order_evaluate_userorder_id_"+user_order_goodsinfos[i].userorder_id+"' style='display: none;'>"
+							              + "<div class=''>"
+							              + "<p>"
+								          + "<b>订单号 : </b><span>"+user_order_goodsinfos[i].userorder_id+"</span>"
+							              + "</p>"
+							              + "<p>"
+								          + "<b>总金额 : </b><span>"+new Number(user_order_goodsinfos[i].order_ttprice).toFixed(2)+"元</span>"
+							              + "</p>";
+							
+							
+					} else if(user_order_goodsinfos[i].order_isdeleted == 1){
+						_html += "<a href='JavaScript:void(0);' class='ucrot_delete ucrot_delete_above' style='background:url(/shopping/user/page_user/img/order_del_btn_active.png) no-repeat 10px center;'>已删除</a>";
+					}
+						  
+					_html += "</div>"
+						  + "</td>"
+						  + "</tr>"
+						  + "<tr class='ucro_content'>"
+						  + "<td>";
+					for (var j = 0; j < user_order_goodsinfos[i].uogis.length; j++) {
+						_html += "<div class='ucroc_block'>"
+							   + "<a href='/shopping/user/page_goods/detail.html?goods_id="+user_order_goodsinfos[i].uogis[j].goods_id+"' class='ucroc_img'>"
+							   + "<img src='/shopping/goodsImg/"+user_order_goodsinfos[i].uogis[j].goods_img+"'/>"
+							   + "</a>"
+						       + "<p class='ucroc_title'>" + user_order_goodsinfos[i].uogis[j].goods_name + "</p>"
+						       + "<span class='ucroc_count'>x"+user_order_goodsinfos[i].uogis[j].goods_num+"</span>"
+					           + "</div>";
+					    if(user_order_goodsinfos[i].order_isdeleted == 0) {
+						 	_html_evaluate += "<p class='goods_id_"+ user_order_goodsinfos[i].uogis[j].goods_id +"'>"
+					         			    + "<img style='width:50px;height:50px;' src='/shopping/goodsImg/"+user_order_goodsinfos[i].uogis[j].goods_img+"'/>"
+				              				+ "</p>"
+				              				+ "<p>" + user_order_goodsinfos[i].uogis[j].goods_name + "</p>" 
+						 					+ "<div>"
+							                + "<textarea name='order_evaluate' class='order_evaluate' rows='' cols=''>评价内容</textarea>"
+										    + "</div>";
+					    }
+					}
+					_html += "</td>"
+						   + "<td>"
+					       + "<span class='ucroc_pay'>"+new Number(user_order_goodsinfos[i].order_ttprice).toFixed(2)+"元</span>"
+				           + "</td>"
+				           + "<td>";
+				   	if(user_order_goodsinfos[i].order_isdeleted == 0) {
+					   	switch (user_order_goodsinfos[i].order_state) {
+						case 0:
+							_html += "<span class='ucroc_status'>待支付</span>"
+								+ "</td>"
+						        + "<td>"
+								+ "<span class='ucroc_operate'>"
+							    + "<a href='JavaScript:void(0);'>立即支付</a>"
+								+ "</span>"
+						     	+ "</td>";
+							break;
+						case 1:
+							_html += "<span class='ucroc_status'>待发货</span>"
+								+ "</td>"
+						        + "<td>"
+								+ "<span class='ucroc_operate'>"
+								+ "<a href='JavaScript:void(0);'>提醒卖家</a>"
+								+ "</span>"
+						     	+ "</td>";
+							break;
+						case 2:
+							_html += "<span class='ucroc_status'>已发货</span>"
+								+ "</td>"
+						        + "<td>"
+								+ "<span class='ucroc_operate'>"
+								+ "<a href='JavaScript:void(0);'>确认收货</a>"
+								+ "</span>"
+						     	+ "</td>";
+							break;
+						case 3:
+							_html += "<span class='ucroc_status'>待评价</span>"
+								+ "</td>"
+						        + "<td>"
+								+ "<span class='ucroc_operate'>"
+							    + "<a href='JavaScript:void(0);' class='layer_order_evaluate'>立即评价</a>"
+								+ "</span>"
+						     	+ "</td>";
+							break;
+						case 4:
+							_html += "<span class='ucroc_status'>已评价</span>"
+								+ "</td>"
+						        + "<td>"
+								+ "<span class='ucroc_operate'>"
+							    + "<a href='JavaScript:void(0);' class='ucrot_delete ucrot_delete_below'>删除订单</a>"
+								+ "</span>"
+						     	+ "</td>";
+							break;
+						case 5:
+							_html += "<span class='ucroc_status'>已失效</span>"
+								+ "</td>"
+						        + "<td>"
+								+ "<span class='ucroc_operate'>"
+							    + "<a href='JavaScript:void(0);' class='ucrot_delete ucrot_delete_below'>删除订单</a>"
+								+ "</span>"
+						     	+ "</td>";
+							break;
+						default:
+							_html += "<span class='ucroc_status'>无状态</span>"
+								+ "</td>"
+						        + "<td>"
+								+ "<span class='ucroc_operate'>"
+							    + "<a href='JavaScript:void(0);' class='ucrot_delete ucrot_delete_below'>删除订单</a>"
+								+ "</span>"
+						     	+ "</td>";
+							break;
+					}
+				} else if(user_order_goodsinfos[i].order_isdeleted == 1){
+					_html += "<span class='ucroc_status'>已删除</span>"
+						+ "</td>"
+				        + "<td>"
+						+ "<span class='ucroc_operate'>"
+					    + "<a href='JavaScript:void(0);' class='ucrot_noshow'>不再显示</a>"
+						+ "</span>"
+				     	+ "</td>";
+				}
+				
+				_html += "</tr>"
+				       + "</table>";
+				if(user_order_goodsinfos[i].order_isdeleted == 0) {
+					_html_evaluate += "<input type='button' value='提交评价' class='ucral_modify_submit' style='background:lightgreen;width:100px;'/>"
+					                + "</div>"
+				                    + "</div>";
+				}
+				}
+				$(".ucr_orderlist").html(_html);
+				$(".layer_user_headers").after(_html_evaluate);
+			}
+		}
+	});
+	
+	$.ajax({
+		type:"post",
+		url:"/shopping/user/getShopRecommendations.do",
+		success:function(data){
+			var shoprecommendation_goodsinfos = eval("("+data+")");
+			var _html = "";
+			for (var i = 0; i < shoprecommendation_goodsinfos.length; i++) {
+				_html += "<div class='ucrc_block'>"
+				       + "<dl>"
+				       + "<dt>"
+					   + "<a href='/shopping/user/page_goods/detail.html?goods_id="+ shoprecommendation_goodsinfos[i].goods_id +"'>"
+					   + "<img src='/shopping/goodsImg/"+shoprecommendation_goodsinfos[i].goods_img.split(",")[0]+"' />"
+					   + "</a>"
+				       + "</dt>"
+				       + "<dd><strong>￥</strong><b>"+new Number(shoprecommendation_goodsinfos[i].goods_curprice).toFixed(2)+"</b></dd>"
+				       + "<dd>"
+					   + "<a href='/shopping/user/page_goods/detail.html?goods_id="+ shoprecommendation_goodsinfos[i].goods_id +"'>"+shoprecommendation_goodsinfos[i].goods_name+"</a>"
+					   + "</dd>"
+			           + "</dl>"
+		               + "</div>";
+			}
+			_html += "<div class='clear'></div>";
+			
+			
+			$(".ucr_recommend .ucr_content").html(_html);
+		}
+	});
+	
+	$(".logout_btn").live("click", function(){
+		$.cookie("user_name_cookie", null,{path: "/"});
+		location.reload();
+		//$.removeCookie("user_name_cookie");
+		$(".ti_left").html("<span>欢迎光临本站！</span>"
+						 + "<a href='/shopping/user/page_user/login.html?loginfrom=page_goods/index.html'>请登录</a>&nbsp;"
+						 + "<a href='/shopping/user/page_user/register.html?regfrom=page_goods/index.html'>免费注册</a>");
+	});
+
+	/*修改头像*/
+	var change_user_img ;
+	$(".userh_changebtn").click(function(){
+		change_user_img = layer.open({
+		  type: 1,
+		  title:"请选择您喜欢的头像",
+		  skin: 'layui-layer-molv', //样式类名
+		  scrollbar: false,
+		  closeBtn: 2,
+		  shift: 4,
+		  shadeClose: true, //开启遮罩关闭
+		  shade: 0.8,
+		  area: ['460px', '600px'],
+		  content: $('.layer_user_headers')
+		});
+	});
+	
+	$(".layer_user_headers a").click(function(){
+		var img_src_val = $(this).children("img").attr("src");
+		$.ajax({
+			type:"post",
+			url:"/shopping/user/changeUserImg.do",
+			data:{"user_name":user_name_cookie,"user_img":img_src_val},
+			success:function(msg){
+				if(msg == "success") {
+					$(".user_header span img").attr("src",img_src_val);
+					layer.close(change_user_img);//关闭上面的弹出层
+				}
+			}
+		});
+	});
+	
+	/*修改密码*/
+	var change_user_password ;
+	$(".ucli_resetpwd").click(function(){
+		change_user_password = layer.open({
+		  type: 1,
+		  title:"请更改您的密码",
+		  skin: 'layui-layer-molv', //样式类名
+		  scrollbar: false,
+		  closeBtn: 2,
+		  shift: 2,
+		  shadeClose: true, //开启遮罩关闭
+		  shade: 0.8,
+		  area: ['350px', '250px'],
+		  content: $('.layer_user_password')
+		});
+	});
+	
+	$("#origin_user_password").focus(function(){
+		$(".luam_origin_user_password_img img").attr("src","");
+	}).blur(function(){
+		var origin_user_password_val = $("#origin_user_password").val();
+		$.ajax({
+			type:"post",
+			url:"/shopping/user/changePwdCheckByAjax.do",
+			data:{"user_name":user_name_cookie,"origin_user_password":origin_user_password_val,"from":"origin_user_password"},
+			success:function(msg){
+				//alert(msg);
+				if(msg == "no_origin_user_password") {
+					layer.msg("客官，必须输入原密码才能更改密码~~"); 
+					$(".luam_origin_user_password_img img").attr("src","/shopping/user/page_user/img/get-info-purple-button.png");
+					//$(".origin_user_password").focus();
+				} else if(msg == "wrong_origin_user_password"){
+					layer.msg("客官，您原来密码不记得了嘛~~"); 
+					$(".luam_origin_user_password_img img").attr("src","/shopping/user/page_user/img/get-info-purple-button.png");
+					//$(".origin_user_password").focus();
+				} else if(msg == "success") {
+					$(".luam_origin_user_password_img img").attr("src","/shopping/user/page_user/img/clear-green-button.png");
+				}
+			}
+		});
+	});
+	
+	$("#new_user_password").focus(function(){
+		$(".luam_new_user_password_img img").attr("src","");		
+	}).blur(function(){
+		var origin_user_password_val = $("#origin_user_password").val();
+		var new_user_password_val = $("#new_user_password").val();
+		var password_test = new RegExp("^[a-zA-Z0-9_]{6,16}$");
+		var flag_password_test = password_test.test(new_user_password_val);
+		if(new_user_password_val == "") {
+			layer.msg("客官，请输入您的新密码！"); 
+			$(".luam_new_user_password_img img").attr("src","/shopping/user/page_user/img/get-info-purple-button.png");
+			//$(".new_user_password").focus();
+		} else if(!flag_password_test) {
+			layer.msg("客官，请输入6~16位以大小写字母、数字或下划线组成的密码！"); 
+			$(".luam_new_user_password_img img").attr("src","/shopping/user/page_user/img/get-info-purple-button.png");
+			//$(".new_user_password").focus();
+		} else if(origin_user_password_val == new_user_password_val) {
+			layer.msg("客官，新密码不能与原密码相同！"); 
+			$(".luam_new_user_password_img img").attr("src","/shopping/user/page_user/img/get-info-purple-button.png");
+			//$(".new_user_password").focus();
+		} else {
+			$(".luam_new_user_password_img img").attr("src","/shopping/user/page_user/img/clear-green-button.png");
+		}
+	});
+	
+	$(".new_user_repassword").focus(function(){
+		$(".luam_new_user_repassword_img img").attr("src","");		
+	}).blur(function(){
+		var new_user_password_val = $(".new_user_password").val();
+		var new_user_repassword_val = $(".new_user_repassword").val();
+		if(new_user_repassword_val == "") {
+			layer.msg("客官，请再次输入您的新密码！"); 
+			$(".luam_new_user_repassword_img img").attr("src","/shopping/user/page_user/img/get-info-purple-button.png");
+			//$(".new_user_password").focus();
+		} else if(new_user_repassword_val != new_user_password_val) {
+			layer.msg("客官，您两次输入的新密码不一致！"); 
+			$(".luam_new_user_repassword_img img").attr("src","/shopping/user/page_user/img/get-info-purple-button.png");
+			//$(".new_user_password").focus();
+		} else {
+			$(".luam_new_user_repassword_img img").attr("src","/shopping/user/page_user/img/clear-green-button.png");
+		}
+	});
+	
+	$(".user_password_modify_submit").click(function(){
+		var origin_user_password_val = $(".origin_user_password").val();
+		var new_user_password_val = $(".new_user_password").val();
+		var new_user_repassword_val = $(".new_user_repassword").val();
+		$.ajax({
+			type:"post",
+			url:"/shopping/user/changePwdCheckByAjax.do",
+			data:{"user_name":user_name_cookie,"origin_user_password":origin_user_password_val,"new_user_password":new_user_password_val,"new_user_repassword":new_user_repassword_val,"from":"onsubmit"},
+			success:function(msg){
+				//alert(msg);
+				if(msg == "no_origin_user_password") {
+					layer.msg("客官，必须输入原密码才能更改密码~~"); 
+					$(".luam_origin_user_password_img img").attr("src","/shopping/user/page_user/img/get-info-purple-button.png");
+					//$(".origin_user_password").focus();
+				} else if(msg == "wrong_origin_user_password"){
+					layer.msg("客官，您原来密码不记得了嘛~~"); 
+					$(".luam_origin_user_password_img img").attr("src","/shopping/user/page_user/img/get-info-purple-button.png");
+					//$(".origin_user_password").focus();
+				} else if(msg == "no_new_user_password") {
+					layer.msg("客官，请输入您的新密码！"); 
+					$(".luam_new_user_password_img img").attr("src","/shopping/user/page_user/img/get-info-purple-button.png");
+					//$(".new_user_password").focus();
+				} else if(msg == "invalid_new_user_password") {
+					layer.msg("客官，请输入6~16位以大小写字母、数字或下划线组成的密码！"); 
+					$(".luam_new_user_password_img img").attr("src","/shopping/user/page_user/img/get-info-purple-button.png");
+					//$(".new_user_password").focus();
+				} else if(msg == "same_user_password") {
+					layer.msg("客官，新密码不能与原密码相同！"); 
+					$(".luam_new_user_password_img img").attr("src","/shopping/user/page_user/img/get-info-purple-button.png");
+					//$(".new_user_password").focus();
+				} if(msg == "no_new_user_repassword") {
+					layer.msg("客官，请再次输入您的新密码！"); 
+					$(".luam_new_user_repassword_img img").attr("src","/shopping/user/page_user/img/get-info-purple-button.png");
+					//$(".new_user_password").focus();
+				} else if(msg == "wrong_new_user_repassword") {
+					layer.msg("客官，您两次输入的新密码不一致！"); 
+					$(".luam_new_user_repassword_img img").attr("src","/shopping/user/page_user/img/get-info-purple-button.png");
+					//$(".new_user_password").focus();
+				} else if(msg == "success") {
+					$(".luam_origin_user_password_img img").attr("src","/shopping/user/page_user/img/clear-green-button.png");
+					$(".luam_new_user_password_img img").attr("src","/shopping/user/page_user/img/clear-green-button.png");
+					$(".luam_new_user_repassword_img img").attr("src","/shopping/user/page_user/img/clear-green-button.png");
+					layer.msg("客官，您的密码已经修改成功，请善存！");
+					layer.close(change_user_password);
+					$(".origin_user_password").val("");
+					$(".new_user_password").val("");
+					$(".new_user_repassword").val("");
+					$(".luam_origin_user_password_img img").attr("src","");
+					$(".luam_new_user_password_img img").attr("src","");
+					$(".luam_new_user_repassword_img img").attr("src","");
+				}
+			}
+		});
+	});
+	
+	/*修改电话号码*/
+	$(".ucli_resetphone").click(function(){
+		layer.prompt({
+		  formType: 0,
+		  title: '请输入符合规则的联系电话！'
+		},function(value, index, elem){
+			var new_user_telnum_val = value;
+			$.ajax({
+				type:"post",
+				url:"/shopping/user/changeTelCheckByAjax.do",
+				data:{"user_name":user_name_cookie,"new_user_telnum":new_user_telnum_val},
+				success:function(msg){
+					if(msg == "no_new_user_telnum") {
+						layer.msg("客官，请输入新的手机号码！");
+					} else if(msg == "invalid_new_user_telnum") {
+						layer.msg("客官，请输入符合规则的联系电话！");
+					} else if(msg == "same_user_telnum") {
+						layer.msg("客官，您输入的新号码与老号码相同！");
+					} else if(msg == "new_user_telnum_exists") {
+						layer.msg("客官，您输入的号码已被其他用户占用，如果不是您本人注册，那么您的号码可能已经泄漏，请注意安全！", {time: 5000});
+					} else if(msg == "success") {
+						layer.msg("客官，您的手机号码已经修改成功！");
+						$(".user_telnum").html(new_user_telnum_val.substring(0,4)+"****"+new_user_telnum_val.substring(8));	
+						$(".ucli_resetphone").text("修改");
+					}
+				}
+			});
+		});
+	});
+	
+	/*修改邮箱号*/
+	$(".ucli_resetemail").click(function(){
+		layer.prompt({
+		  formType: 0,
+		  title: '请输入符合规则的邮箱号！'
+		},function(value, index, elem){
+			var new_user_email_val = value;
+			$.ajax({
+				type:"post",
+				url:"/shopping/user/changeEmailCheckByAjax.do",
+				data:{"user_name":user_name_cookie,"new_user_email":new_user_email_val},
+				success:function(msg){
+					if(msg == "no_new_user_email") {
+						layer.msg("客官，请输入新的邮箱号！");
+					} else if(msg == "invalid_new_user_email") {
+						layer.msg("客官，请输入符合规则的邮箱号！");
+					} else if(msg == "same_user_email") {
+						layer.msg("客官，您输入的新邮箱号与老邮箱号相同！");
+					} else if(msg == "new_user_email_exists") {
+						layer.msg("客官，您输入的邮箱号已被其他用户占用，如果不是您本人注册，那么您的邮箱可能已经泄漏，请注意安全！", {time: 5000});
+					} else if(msg == "success") {
+						layer.msg("客官，您的邮箱号已经修改成功！");
+						$(".user_email").html(new_user_email_val.split("@")[0].substring(0,4)+"****@"+new_user_email_val.split("@")[1]);	
+						$(".ucli_resetemail").text("修改");
+					}
+				}
+			});
+		});
+	});
+	
+	$(".ucro_quanbu").click(function(){
+		$.ajax({
+			type:"post",
+			url:"/shopping/user/getUserOrders.do",
+			data:{"user_name":user_name_cookie},
+			success:function(data) {
+				var user_order_goodsinfos = eval("("+data+")");
+				if(user_order_goodsinfos == "") {
+					$(".ucr_orderlist").html("<h2>客官，您还没有订单~~</h2>");
+				} else {
+					var _html = "";
+					for (var i = 0; i < user_order_goodsinfos.length; i++) {
+						if(user_order_goodsinfos[i].order_isdeleted == 2) {
+							continue;		 
+						}
+						_html += "<table class='ucrol_li user_order_id_"+user_order_goodsinfos[i].userorder_id+"' border='0' cellspacing='0' cellpadding='0' width='100%'>"
+							  + "<tr>"
+							  + "<td colspan='4'>"
+							  + "<div class='ucro_title'>"
+							  + "&nbsp;"
+							  + "<span>"+user_order_goodsinfos[i].order_createtime+"</span>"
+							  + "&nbsp;&nbsp;&nbsp;"
+							  + "<span class='ucrol_userorder_id'><b>订单号：</b>"+user_order_goodsinfos[i].userorder_id+"</span>";
+						if(user_order_goodsinfos[i].order_isdeleted == 0) {
+							  switch (user_order_goodsinfos[i].order_state) {
+								case 0:
+									_html += "<a href='JavaScript:void(0);' class='ucrot_delete ucrot_delete_above' style='background:url(/shopping/user/page_user/img/order_del_btn.png) no-repeat 10px center;'>删除订单</a>";
+									break;
+								case 1:
+								case 2:
+									_html += "";
+									break;
+								case 3:
+								case 4:
+								case 6:
+									_html += "<a href='JavaScript:void(0);' class='ucrot_delete ucrot_delete_above' style='background:url(/shopping/user/page_user/img/order_del_btn.png) no-repeat 10px center;'>删除订单</a>";
+									break;
+								default:
+									_html += "<a href='JavaScript:void(0);' class='ucrot_delete ucrot_delete_above' style='background:url(/shopping/user/page_user/img/order_del_btn.png) no-repeat 10px center;'>删除订单</a>";
+									break;
+								}	  
+						} else if(user_order_goodsinfos[i].order_isdeleted == 1){
+							_html += "<a href='JavaScript:void(0);' class='ucrot_delete ucrot_delete_above' style='background:url(/shopping/user/page_user/img/order_del_btn_active.png) no-repeat 10px center;'>已删除</a>";
+						}
+							  
+						_html += "</div>"
+							  + "</td>"
+							  + "</tr>"
+							  + "<tr class='ucro_content'>"
+							  + "<td>";
+						for (var j = 0; j < user_order_goodsinfos[i].uogis.length; j++) {
+							_html += "<div class='ucroc_block'>"
+								   + "<a href='/shopping/user/page_goods/detail.html?goods_id="+user_order_goodsinfos[i].uogis[j].goods_id+"' class='ucroc_img'>"
+								   + "<img src='/shopping/goodsImg/"+user_order_goodsinfos[i].uogis[j].goods_img+"'/>"
+								   + "</a>"
+							       + "<p class='ucroc_title'>" + user_order_goodsinfos[i].uogis[j].goods_name + "</p>"
+							       + "<span class='ucroc_count'>x"+user_order_goodsinfos[i].uogis[j].goods_num+"</span>"
+						           + "</div>";
+						}
+						_html += "</td>"
+							   + "<td>"
+						       + "<span class='ucroc_pay'>"+new Number(user_order_goodsinfos[i].order_ttprice).toFixed(2)+"元</span>"
+					           + "</td>"
+					           + "<td>";
+					   	if(user_order_goodsinfos[i].order_isdeleted == 0) {
+						   	switch (user_order_goodsinfos[i].order_state) {
+							case 0:
+								_html += "<span class='ucroc_status'>待支付</span>"
+									+ "</td>"
+							        + "<td>"
+									+ "<span class='ucroc_operate'>"
+								    + "<a href='JavaScript:void(0);'>立即支付</a>"
+									+ "</span>"
+							     	+ "</td>";
+								break;
+							case 1:
+								_html += "<span class='ucroc_status'>待发货</span>"
+									+ "</td>"
+							        + "<td>"
+									+ "<span class='ucroc_operate'>"
+									+ "<a href='JavaScript:void(0);'>提醒卖家</a>"
+									+ "</span>"
+							     	+ "</td>";
+								break;
+							case 2:
+								_html += "<span class='ucroc_status'>已发货</span>"
+									+ "</td>"
+							        + "<td>"
+									+ "<span class='ucroc_operate'>"
+									+ "<a href='JavaScript:void(0);'>确认收货</a>"
+									+ "</span>"
+							     	+ "</td>";
+								break;
+							case 3:
+								_html += "<span class='ucroc_status'>待评价</span>"
+									+ "</td>"
+							        + "<td>"
+									+ "<span class='ucroc_operate'>"
+								    + "<a href='JavaScript:void(0);' class='layer_order_evaluate'>立即评价</a>"
+									+ "</span>"
+							     	+ "</td>";
+								break;
+							case 4:
+								_html += "<span class='ucroc_status'>已评价</span>"
+									+ "</td>"
+							        + "<td>"
+									+ "<span class='ucroc_operate'>"
+								    + "<a href='JavaScript:void(0);' class='ucrot_delete ucrot_delete_below'>删除订单</a>"
+									+ "</span>"
+							     	+ "</td>";
+								break;
+							case 5:
+								_html += "<span class='ucroc_status'>已失效</span>"
+									+ "</td>"
+							        + "<td>"
+									+ "<span class='ucroc_operate'>"
+								    + "<a href='JavaScript:void(0);' class='ucrot_delete ucrot_delete_below'>删除订单</a>"
+									+ "</span>"
+							     	+ "</td>";
+								break;
+							default:
+								_html += "<span class='ucroc_status'>无状态</span>"
+									+ "</td>"
+							        + "<td>"
+									+ "<span class='ucroc_operate'>"
+								    + "<a href='JavaScript:void(0);' class='ucrot_delete ucrot_delete_below'>删除订单</a>"
+									+ "</span>"
+							     	+ "</td>";
+								break;
+						}
+					} else if(user_order_goodsinfos[i].order_isdeleted == 1){
+						_html += "<span class='ucroc_status'>已删除</span>"
+							+ "</td>"
+					        + "<td>"
+							+ "<span class='ucroc_operate'>"
+						    + "<a href='JavaScript:void(0);' class='ucrot_noshow'>不再显示</a>"
+							+ "</span>"
+					     	+ "</td>";
+					}
+					
+					_html += "</tr>"
+					       + "</table>";
+					
+					}
+					$(".ucr_orderlist").html(_html);
+				}
+			}
+		});
+	});
+	
+	$(".ucro_daifukuan").click(function(){
+		var flag_isexistornot = false;
+		$.ajax({
+			type:"post",
+			url:"/shopping/user/getUserOrders.do",
+			data:{"user_name":user_name_cookie},
+			success:function(data) {
+				var user_order_goodsinfos = eval("("+data+")");
+				if(user_order_goodsinfos == "") {
+					$(".ucr_orderlist").html("<h2>客官，您还没有订单~~</h2>");
+				} else {
+					var _html = "";
+					for (var i = 0; i < user_order_goodsinfos.length; i++) {
+						if(user_order_goodsinfos[i].order_isdeleted == 1 || user_order_goodsinfos[i].order_isdeleted == 2) {
+							continue;		 
+						}
+						if(user_order_goodsinfos[i].order_state == 0) {
+							flag_isexistornot = true;
+							_html += "<table class='ucrol_li user_order_id_"+user_order_goodsinfos[i].userorder_id+"' border='0' cellspacing='0' cellpadding='0' width='100%'>"
+								  + "<tr>"
+								  + "<td colspan='4'>"
+								  + "<div class='ucro_title'>"
+								  + "&nbsp;"
+								  + "<span>"+user_order_goodsinfos[i].order_createtime+"</span>"
+								  + "&nbsp;&nbsp;&nbsp;"
+								  + "<span class='ucrol_userorder_id'><b>订单号：</b>"+user_order_goodsinfos[i].userorder_id+"</span>";
+							
+							//_html += "<a href='JavaScript:void(0);' class='ucrot_delete ucrot_delete_above' style='background:url(/shopping/user/page_user/img/order_del_btn.png) no-repeat 10px center;'>删除订单</a>";
+							_html += "</div>"
+								  + "</td>"
+								  + "</tr>"
+								  + "<tr class='ucro_content'>"
+								  + "<td>";
+							for (var j = 0; j < user_order_goodsinfos[i].uogis.length; j++) {
+								_html += "<div class='ucroc_block'>"
+									   + "<a href='/shopping/user/page_goods/detail.html?goods_id="+user_order_goodsinfos[i].uogis[j].goods_id+"' class='ucroc_img'>"
+									   + "<img src='/shopping/goodsImg/"+user_order_goodsinfos[i].uogis[j].goods_img+"'/>"
+									   + "</a>"
+								       + "<p class='ucroc_title'>" + user_order_goodsinfos[i].uogis[j].goods_name + "</p>"
+								       + "<span class='ucroc_count'>x"+user_order_goodsinfos[i].uogis[j].goods_num+"</span>"
+							           + "</div>";
+							}
+							_html += "</td>"
+								   + "<td>"
+							       + "<span class='ucroc_pay'>"+new Number(user_order_goodsinfos[i].order_ttprice).toFixed(2)+"元</span>"
+						           + "</td>"
+						           + "<td>";
+									_html += "<span class='ucroc_status'>待支付</span>"
+										+ "</td>"
+								        + "<td>"
+										+ "<span class='ucroc_operate'>"
+									    + "<a href='JavaScript:void(0);'>立即支付</a>"
+										+ "</span>"
+								     	+ "</td>";
+							_html += "</tr>"
+						       	+ "</table>";
+						}
+					}
+					if(flag_isexistornot == false) {
+						$(".ucr_orderlist").html("<h2>客官，您还没有未支付的订单~~</h2>");
+					} else {
+						$(".ucr_orderlist").html(_html);
+					}
+				}
+			}
+		});
+	});
+	
+	$(".ucro_daifahuo").click(function(){
+		var flag_isexistornot = false;
+		$.ajax({
+			type:"post",
+			url:"/shopping/user/getUserOrders.do",
+			data:{"user_name":user_name_cookie},
+			success:function(data) {
+				var user_order_goodsinfos = eval("("+data+")");
+				if(user_order_goodsinfos == "") {
+					$(".ucr_orderlist").html("<h2>客官，您还没有订单~~</h2>");
+				} else {
+					var _html = "";
+					for (var i = 0; i < user_order_goodsinfos.length; i++) {
+						if(user_order_goodsinfos[i].order_isdeleted == 1 || user_order_goodsinfos[i].order_isdeleted == 2) {
+							continue;		 
+						}
+						if(user_order_goodsinfos[i].order_state == 1) {
+							flag_isexistornot = true;
+							_html += "<table class='ucrol_li user_order_id_"+user_order_goodsinfos[i].userorder_id+"' border='0' cellspacing='0' cellpadding='0' width='100%'>"
+								  + "<tr>"
+								  + "<td colspan='4'>"
+								  + "<div class='ucro_title'>"
+								  + "&nbsp;"
+								  + "<span>"+user_order_goodsinfos[i].order_createtime+"</span>"
+								  + "&nbsp;&nbsp;&nbsp;"
+								  + "<span class='ucrol_userorder_id'><b>订单号：</b>"+user_order_goodsinfos[i].userorder_id+"</span>";
+							
+							//_html += "<a href='JavaScript:void(0);' class='ucrot_delete ucrot_delete_above' style='background:url(/shopping/user/page_user/img/order_del_btn.png) no-repeat 10px center;'>删除订单</a>";
+							_html += "</div>"
+								  + "</td>"
+								  + "</tr>"
+								  + "<tr class='ucro_content'>"
+								  + "<td>";
+							for (var j = 0; j < user_order_goodsinfos[i].uogis.length; j++) {
+								_html += "<div class='ucroc_block'>"
+									   + "<a href='/shopping/user/page_goods/detail.html?goods_id="+user_order_goodsinfos[i].uogis[j].goods_id+"' class='ucroc_img'>"
+									   + "<img src='/shopping/goodsImg/"+user_order_goodsinfos[i].uogis[j].goods_img+"'/>"
+									   + "</a>"
+								       + "<p class='ucroc_title'>" + user_order_goodsinfos[i].uogis[j].goods_name + "</p>"
+								       + "<span class='ucroc_count'>x"+user_order_goodsinfos[i].uogis[j].goods_num+"</span>"
+							           + "</div>";
+							}
+							_html += "</td>"
+								   + "<td>"
+							       + "<span class='ucroc_pay'>"+new Number(user_order_goodsinfos[i].order_ttprice).toFixed(2)+"元</span>"
+						           + "</td>"
+						           + "<td>";
+									_html += "<span class='ucroc_status'>待发货</span>"
+										+ "</td>"
+								        + "<td>"
+										+ "<span class='ucroc_operate'>"
+									    + "<a href='JavaScript:void(0);'>提醒卖家</a>"
+										+ "</span>"
+								     	+ "</td>";
+							_html += "</tr>"
+						       	+ "</table>";
+						}
+					}
+					if(flag_isexistornot == false) {
+						$(".ucr_orderlist").html("<h2>客官，您还没有未发货的订单~~</h2>");
+					} else {
+						$(".ucr_orderlist").html(_html);
+					}
+				}
+			}
+		});
+	});
+	
+	$(".ucro_daiqianshou").click(function(){
+		var flag_isexistornot = false;
+		$.ajax({
+			type:"post",
+			url:"/shopping/user/getUserOrders.do",
+			data:{"user_name":user_name_cookie},
+			success:function(data) {
+				var user_order_goodsinfos = eval("("+data+")");
+				if(user_order_goodsinfos == "") {
+					$(".ucr_orderlist").html("<h2>客官，您还没有订单~~</h2>");
+				} else {
+					var _html = "";
+					for (var i = 0; i < user_order_goodsinfos.length; i++) {
+						if(user_order_goodsinfos[i].order_isdeleted == 1 || user_order_goodsinfos[i].order_isdeleted == 2) {
+							continue;		 
+						}
+						if(user_order_goodsinfos[i].order_state == 2) {
+							flag_isexistornot = true;
+							_html += "<table class='ucrol_li user_order_id_"+user_order_goodsinfos[i].userorder_id+"' border='0' cellspacing='0' cellpadding='0' width='100%'>"
+								  + "<tr>"
+								  + "<td colspan='4'>"
+								  + "<div class='ucro_title'>"
+								  + "&nbsp;"
+								  + "<span>"+user_order_goodsinfos[i].order_createtime+"</span>"
+								  + "&nbsp;&nbsp;&nbsp;"
+								  + "<span class='ucrol_userorder_id'><b>订单号：</b>"+user_order_goodsinfos[i].userorder_id+"</span>";
+							
+							//_html += "<a href='JavaScript:void(0);' class='ucrot_delete ucrot_delete_above' style='background:url(/shopping/user/page_user/img/order_del_btn.png) no-repeat 10px center;'>删除订单</a>";
+							_html += "</div>"
+								  + "</td>"
+								  + "</tr>"
+								  + "<tr class='ucro_content'>"
+								  + "<td>";
+							for (var j = 0; j < user_order_goodsinfos[i].uogis.length; j++) {
+								_html += "<div class='ucroc_block'>"
+									   + "<a href='/shopping/user/page_goods/detail.html?goods_id="+user_order_goodsinfos[i].uogis[j].goods_id+"' class='ucroc_img'>"
+									   + "<img src='/shopping/goodsImg/"+user_order_goodsinfos[i].uogis[j].goods_img+"'/>"
+									   + "</a>"
+								       + "<p class='ucroc_title'>" + user_order_goodsinfos[i].uogis[j].goods_name + "</p>"
+								       + "<span class='ucroc_count'>x"+user_order_goodsinfos[i].uogis[j].goods_num+"</span>"
+							           + "</div>";
+							}
+							_html += "</td>"
+								   + "<td>"
+							       + "<span class='ucroc_pay'>"+new Number(user_order_goodsinfos[i].order_ttprice).toFixed(2)+"元</span>"
+						           + "</td>"
+						           + "<td>";
+									_html += "<span class='ucroc_status'>已发货</span>"
+										+ "</td>"
+								        + "<td>"
+										+ "<span class='ucroc_operate'>"
+									    + "<a href='JavaScript:void(0);'>确认收货</a>"
+										+ "</span>"
+								     	+ "</td>";
+							_html += "</tr>"
+						       	+ "</table>";
+						}
+					}
+					if(flag_isexistornot == false) {
+						$(".ucr_orderlist").html("<h2>客官，您还没有待签收的订单~~</h2>");
+					} else {
+						$(".ucr_orderlist").html(_html);
+					}
+				}
+			}
+		});
+	});
+	
+	$(".ucro_daipingjia").click(function(){
+		var flag_isexistornot = false;
+		$.ajax({
+			type:"post",
+			url:"/shopping/user/getUserOrders.do",
+			data:{"user_name":user_name_cookie},
+			success:function(data) {
+				var user_order_goodsinfos = eval("("+data+")");
+				if(user_order_goodsinfos == "") {
+					$(".ucr_orderlist").html("<h2>客官，您还没有订单~~</h2>");
+				} else {
+					var _html = "";
+					for (var i = 0; i < user_order_goodsinfos.length; i++) {
+						if(user_order_goodsinfos[i].order_isdeleted == 1 || user_order_goodsinfos[i].order_isdeleted == 2) {
+							continue;		 
+						}
+						if(user_order_goodsinfos[i].order_state == 3) {
+							flag_isexistornot = true;
+							_html += "<table class='ucrol_li user_order_id_"+user_order_goodsinfos[i].userorder_id+"' border='0' cellspacing='0' cellpadding='0' width='100%'>"
+								  + "<tr>"
+								  + "<td colspan='4'>"
+								  + "<div class='ucro_title'>"
+								  + "&nbsp;"
+								  + "<span>"+user_order_goodsinfos[i].order_createtime+"</span>"
+								  + "&nbsp;&nbsp;&nbsp;"
+								  + "<span class='ucrol_userorder_id'><b>订单号：</b>"+user_order_goodsinfos[i].userorder_id+"</span>";
+							
+							_html += "<a href='JavaScript:void(0);' class='ucrot_delete ucrot_delete_above' style='background:url(/shopping/user/page_user/img/order_del_btn.png) no-repeat 10px center;'>删除订单</a>";
+							_html += "</div>"
+								  + "</td>"
+								  + "</tr>"
+								  + "<tr class='ucro_content'>"
+								  + "<td>";
+							for (var j = 0; j < user_order_goodsinfos[i].uogis.length; j++) {
+								_html += "<div class='ucroc_block'>"
+									   + "<a href='/shopping/user/page_goods/detail.html?goods_id="+user_order_goodsinfos[i].uogis[j].goods_id+"' class='ucroc_img'>"
+									   + "<img src='/shopping/goodsImg/"+user_order_goodsinfos[i].uogis[j].goods_img+"'/>"
+									   + "</a>"
+								       + "<p class='ucroc_title'>" + user_order_goodsinfos[i].uogis[j].goods_name + "</p>"
+								       + "<span class='ucroc_count'>x"+user_order_goodsinfos[i].uogis[j].goods_num+"</span>"
+							           + "</div>";
+							}
+							_html += "</td>"
+								   + "<td>"
+							       + "<span class='ucroc_pay'>"+new Number(user_order_goodsinfos[i].order_ttprice).toFixed(2)+"元</span>"
+						           + "</td>"
+						           + "<td>";
+									_html += "<span class='ucroc_status'>待评价</span>"
+										+ "</td>"
+								        + "<td>"
+										+ "<span class='ucroc_operate'>"
+									    + "<a href='JavaScript:void(0);'>立即评价</a>"
+										+ "</span>"
+								     	+ "</td>";
+							_html += "</tr>"
+						       	+ "</table>";
+						}
+					}
+					if(flag_isexistornot == false) {
+						$(".ucr_orderlist").html("<h2>客官，您还没有未评价的订单~~</h2>");
+					} else {
+						$(".ucr_orderlist").html(_html);
+					}
+				}
+			}
+		});
+	});
+	
+	$(".ucrot_delete_above").live("click",function(){
+		var $obj = $(this);
+		var userorder_id_val = $obj.prev().html().split("</b>")[1];
+		if($obj.text() == "删除订单") {
+			layer.confirm("客官，您确定要删除这条订单嘛？订单删除不能复原唷~~",{icon: 3, title:'提示'}, function(index){
+				$obj.css({"background":"url(/shopping/user/page_user/img/order_del_btn_active.png) no-repeat 10px center"});
+				$obj.text("已删除");
+				$(".ucroc_status").text("已删除");
+				$(".ucroc_operate").html("<a href='JavaScript:void(0);'>不再显示</a>");
+				$.ajax({
+					type:"post",
+					url:"/shopping/user/updateUserOrder.do",
+					data:{"userorder_id":userorder_id_val,"from":"order_delete"},
+					success:function(msg){
+						if(msg == "success") {
+							layer.msg("客官，您的订单已经成功删除，您可以继续选择该订单以后不再显示~~", {time: 4000});
+							$obj.css({"background":"url(/shopping/user/page_user/img/order_del_btn_active.png) no-repeat 10px center"});
+							$obj.text("已删除");
+							$(".ucroc_status").text("已删除");
+							$(".ucroc_operate").html("<a href='JavaScript:void(0);'>不再显示</a>");
+						}
+					}
+				}); 
+				layer.close(index);
+			});
+		} else if($(this).text() == "已删除") {
+			layer.alert('客官抱歉，已删除的订单不能恢复,您可以继续选择该订单以后不再显示~~', {icon: 5});
+		}
+	});
+	
+	var order_evaluate_layer;
+	$(".ucroc_operate").live("click",function(){
+		//window.location.href = "/shopping/user/user_order/order_pay_success.html?userorder_id=" + user_order_goodsinfos[i].userorder_id + "&order_ttprice=" + new Number(user_order_goodsinfos[i].order_ttprice).toFixed(2)";
+		//alert($(this).children("a").text());
+		var $obj = $(this);
+		var userorder_id_val = $obj.parent().parent().parent().parent().attr("class").split(" ")[1].split("_")[3];
+		//alert(userorder_id_val);
+		var order_ttprice_val = $obj.parent().siblings("td:has(.ucroc_pay)").children().text().replace("元","");
+		if($obj.children("a").text() == "立即支付") {
+			$.ajax({
+				type:"post",
+				url:"/shopping/user/updateUserOrder.do",
+				data:{"userorder_id":userorder_id_val,"user_name":user_name_cookie,"order_ttprice":order_ttprice_val,"from":"order_created"},
+				success:function(msg){
+					if(msg == "success") {
+						window.location.href = "/shopping/user/user_order/order_pay_success.html?userorder_id=" + userorder_id_val + "&order_ttprice=" + order_ttprice_val;
+					}
+				}
+			});
+		} else if($obj.children("a").text() == "提醒卖家") {
+			layer.msg("客官，已经成功提醒卖家尽快发货~~");
+		} else if($obj.children("a").text() == "确认收货") {
+			//alert(123);
+				
+			layer.confirm("客官，您确认收到货物且完好无缺了嘛？",{icon: 3, title:'提示'}, function(index){
+				
+				$.ajax({
+					type:"post",
+					url:"/shopping/user/updateUserOrder.do",
+					data:{"userorder_id":userorder_id_val,"from":"order_confirm"},
+					success:function(msg){
+						if(msg == "success") {
+							layer.msg("客官，确认收货成功，您可以继续选择评价该订单~~", {time: 4000});
+							$obj.parent().siblings("td:has(.ucroc_status)").children(".ucroc_status").text("待评价");
+							$obj.children("a").text("立即评价");
+							$obj.children("a").addClass("layer_order_evaluate");
+							$obj.parent().parent().parent().children("tr:has(.ucrol_userorder_id)").children().children().children(".ucrol_userorder_id").append("<a href='JavaScript:void(0);' class='ucrot_delete ucrot_delete_above' style='background:url(/shopping/user/page_user/img/order_del_btn.png) no-repeat 10px center;'>删除订单</a>");
+						}
+					}
+				});  
+				layer.close(index);
+			});
+		} else if($obj.children("a").text() == "立即评价") {
+			order_evaluate_layer = layer.open({
+				  type: 1,
+				  title:"评价",
+				  skin: 'layui-layer-demo', //样式类名
+				  scrollbar: false,
+				  closeBtn: 1,
+				  shift: 2,
+				  shadeClose: true, //开启遮罩关闭
+				  shade: 0.8,
+				  area: ['500px', '400px'],
+				  content: $(".order_evaluate_userorder_id_"+userorder_id_val)
+			});
+			//$(".layer_order_evaluate_panel div p:nth-child(1)").children("span").text(userorder_id_val);
+			//$(".layer_order_evaluate_panel div p:nth-child(2)").children("span").text(order_ttprice_val + "元");
+		} else if($obj.children("a").text() == "删除订单") {
+			$.ajax({
+				type:"post",
+				url:"/shopping/user/updateUserOrder.do",
+				data:{"userorder_id":userorder_id_val,"from":"order_delete"},
+				success:function(msg){
+					if(msg == "success") {
+						layer.msg("客官，该订单删除成功，您可以继续选择该订单以后不再显示");
+						$(".user_order_id_"+userorder_id_val + " .ucrot_delete_above").css({"background":"url(/shopping/user/page_user/img/order_del_btn_active.png) no-repeat 10px center"});
+						$(".user_order_id_"+userorder_id_val + " .ucrot_delete_above").text("已删除");
+						$(".user_order_id_"+userorder_id_val + " .ucroc_status").text("已删除");
+						$(".user_order_id_"+userorder_id_val + " .ucroc_operate").html("<a href='JavaScript:void(0);' class='ucrot_noshow'>不再显示</a>");
+					}
+				}
+			});
+		} else if($obj.children("a").text() == "不再显示") {
+			$.ajax({
+				type:"post",
+				url:"/shopping/user/updateUserOrder.do",
+				data:{"userorder_id":userorder_id_val,"from":"order_noshow"},
+				success:function(msg){
+					if(msg == "success") {
+						layer.msg("客官，以后您可以在垃圾箱中找到删除并且不再显示的订单~~");
+						$(".user_order_id_"+userorder_id_val).replaceWith("");
+					}
+				}
+			});
+		}
+	});
+		
+	/*这里本来想给评价内容加一个正则表达式限制，结果全是false，那就不给限制了，空也可以 
+	$(".order_evaluate").blur(function(){
+		var order_evaluate_val = $(".order_evaluate").text();
+		var order_evaluate_test = new RegExp("^[\u4e00-\u9fa5]$");
+		var flag_order_evaluate_test = order_evaluate_test.test(order_evaluate_val);
+		alert(flag_order_evaluate_test);
+		if(!flag_order_evaluate_test) {
+			layer.msg("客官，请输入5~140个字的评价内容~~");
+		}
+	}); */
+		
+	
+	
+	$(".ucral_modify_submit").live("click",function(){
+		var userorder_id_val = $(this).parent().parent().attr("class").split(" ")[1].split("_")[4];
+		//var order_ttprice_val = $(".layer_order_evaluate_panel div p:nth-child(2)").children("span").text().replace("元","");
+		//var order_evaluate_val = $(".order_evaluate").text();
+		var goods_id_and_goods_evaluate = "";
+		$(".order_evaluate_userorder_id_"+userorder_id_val+" p").has("img").each(function(i){
+			goods_id_and_goods_evaluate += $(this).attr("class").split("_")[2]+":"+$(this).next("p").next("div").children().val()+",";
+ 		});
+		$.ajax({
+			type:"post",
+			url:"/shopping/user/addGoodsEvaluation.do",
+			data:{"user_name":user_name_cookie,"userorder_id":userorder_id_val,"goods_id_and_goods_evaluate":goods_id_and_goods_evaluate},
+			success:function(msg){
+				if(msg == "success") {
+					$(".order_evaluate_userorder_id_"+userorder_id_val).empty();
+					layer.msg("客官，恭喜您评价成功~~");
+					layer.close(order_evaluate_layer);
+					$(".user_order_id_"+userorder_id_val + " .ucroc_status").text("已评价");
+					$(".user_order_id_"+userorder_id_val + " .ucroc_operate").html("<a href='JavaScript:void(0);' class='ucrot_delete ucrot_delete_below'>删除订单</a>");
+				}
+			}
+		}); 
+	});
+		
+		
+	});
+</script>
+
+</body>
+</html>

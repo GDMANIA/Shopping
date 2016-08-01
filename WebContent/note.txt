@@ -1,0 +1,103 @@
+EL表达式和JSP标签（jstl）
+为何使用？
+	JSP中嵌入大量java代码增加了页面的复杂度，使得页面不够简洁，不方便代码的维护
+	Sun公司制定了jsp标签，来代替java代码
+	Apache组织开发的一套标签库被Sun公司整合后，称为标准标签库（jsp standard tag library）,配合EL表达式，可以达到减轻JSP文件的复杂度，方便维护
+	
+EL表达式(Expression Language)
+	是一套简单的计算规则，用于给JSP标签的属性赋值，也可以直接用来输出，
+	表达式也可以脱离标签单独使用
+
+EL表达式作用：
+1--访问bean的属性
+	通常情况下的javabean指的是一个公共的类，含有一个空参数的构造器，一些属性以及这些属性提供的get/set方法，方法名与属性名需要符合规范
+	使用：
+	方式一：${对象名.属性名}
+		${user.name}
+		执行过程：容器会依次从pageContext,request,session,application中查找绑定的名称为user的对象	
+		参考：
+		(1)、${pageContext} 获取到 pageContext 对象，它不是在四个域里面去找，而是先在自己定义的对象中找，如果找到了就取出来。
+		(2)、${pageScope} 得到的是 page 域 (pageContext) 中保存数据的 Map集合。也就是指定在 page 域中查找。
+		(3)、${requestScope}、${sessionScope}、${applicationScope} 和上面的 pageScope 一样，都是在特定的域中检索数据。
+		(4)、${param} 获取存在 request 中请求参数的 Map，常用在数据回显上。
+		(5)、${paramValues} 获取存在 request 中请求参数名相同的值的 String[] 数组。
+		(8)、${header} 获取 HTTP 请求头的 Map 对象。
+		(9)、${headValues} 获取 HTTP 请求头值的 Map 对象
+		(10)、${cookie} 获取所有 cookie 的 Map 对象
+		(11)、${initParam} 获取保存所有 Web 应用初始化参数的 Map 对象	
+		等价于：
+		<%
+			User user = (User)request.getAttribute("user");
+			out.print(user.getName();
+		%>
+		
+	方式二：${对象名["属性名"]}
+		方括号中的属性名可以使用单引号或者双引号
+		这种方式[]中出现绑定名，还可以允许[]中出现0开始的下标，用于访问数组中的某个元素的值
+		${user["name"]}
+		${names[0]}
+	
+	指定对象的查找范围
+		${requestScope.user.name}
+	
+2--输出简单的运算结果
+	使用EL表达式进行运算
+	算术：+ - * / % 注意：+在EL表达式中不能作为连接符使用
+		${1+1}
+		
+	逻辑：&& || ！
+		${1>0 $$ 2>0}
+		 
+	关系：> < >= <= == !=
+		${1>2}
+		 
+	empty:用来判断一个字符串或一个集合是否为空
+		     空字符串、空的集合、值为null、找不到对应的值，返回true
+		 	String str = "";
+			${empty str}
+			
+3--获取请求参数值
+	${param.sid}
+	param是EL表达式隐含对象之一
+	
+JSTL（jsp standard tag library）JSP标准标签库：
+Sun定义的标准，Apache开发的基于这套标准的一套标签库，后又转给Sun，是JAVAEE 5.0的核心
+
+如何使用？
+1--导入jstl的jar包
+	jstl-1.2.jar
+	standard-1.1.2.jar
+2--在jsp页面使用taglib指令引入jstl标签库
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+例：
+<c:choose>
+	<c:when test="">
+	
+	</c:when>
+	
+	<c:otherwise></c:otherwise>
+</c:choose>
+
+<c:if test="${requestScope.users == null} ">
+	暂时没有数据
+</c:if>
+<table width="80%">
+<c:forEach items="${requestScope.users}" var="user" varStatus="stat">
+	<tr>
+		<td>${user.user_id}</td>
+		<td>${user.user_age}</td>
+		<td>${user.user_name}</td>
+</c:forEach>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
